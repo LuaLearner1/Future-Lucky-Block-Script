@@ -50,8 +50,11 @@ local Player = Instance.new("TextBox")
 local Gradient_21 = Instance.new("UIGradient")
 local ResetButton = Instance.new("TextButton")
 local Gradient_22 = Instance.new("UIGradient")
+local UnlockButton = Instance.new("TextButton")
+local Gradient_23 = Instance.new("UIGradient")
 local CloseButton1 = Instance.new("TextButton")
 local Title1 = Instance.new("TextLabel")
+local InfoText = Instance.new("TextLabel")
 
 --Properties:
 
@@ -389,7 +392,7 @@ Back1.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 Back1.BackgroundTransparency = 0.500
 Back1.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Back1.Position = UDim2.new(-0.0019999186, 0, 1.00000036, 0)
-Back1.Size = UDim2.new(0, 150, 0, 193)
+Back1.Size = UDim2.new(0, 150, 0, 227)
 
 Gradient_14.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
 Gradient_14.Rotation = -90
@@ -421,7 +424,7 @@ ClearBButton.Parent = Back1
 ClearBButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 ClearBButton.BackgroundTransparency = 0.500
 ClearBButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ClearBButton.Position = UDim2.new(0.0480000004, 0, 0.114093266, 0)
+ClearBButton.Position = UDim2.new(0.0480000004, 0, 0.0964721218, 0)
 ClearBButton.Size = UDim2.new(0, 135, 0, 18)
 ClearBButton.Font = Enum.Font.SourceSans
 ClearBButton.Text = "Clear Inventory"
@@ -441,7 +444,7 @@ InfJButton.Parent = Back1
 InfJButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 InfJButton.BackgroundTransparency = 0.500
 InfJButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-InfJButton.Position = UDim2.new(0.0480000004, 0, 0.243367866, 0)
+InfJButton.Position = UDim2.new(0.0480000004, 0, 0.208125576, 0)
 InfJButton.Size = UDim2.new(0, 135, 0, 18)
 InfJButton.Font = Enum.Font.SourceSans
 InfJButton.Text = "Infinite jump"
@@ -461,7 +464,7 @@ Gravity.Parent = Back1
 Gravity.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 Gravity.BackgroundTransparency = 0.500
 Gravity.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Gravity.Position = UDim2.new(0.0480000004, 0, 0.5281865, 0)
+Gravity.Position = UDim2.new(0.0480000004, 0, 0.448891342, 0)
 Gravity.Size = UDim2.new(0, 135, 0, 18)
 Gravity.Font = Enum.Font.SourceSans
 Gravity.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
@@ -480,7 +483,7 @@ GravityButton.Parent = Back1
 GravityButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 GravityButton.BackgroundTransparency = 0.500
 GravityButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-GravityButton.Position = UDim2.new(0.0480000004, 0, 0.383186519, 0)
+GravityButton.Position = UDim2.new(0.0480000004, 0, 0.32591778, 0)
 GravityButton.Size = UDim2.new(0, 135, 0, 18)
 GravityButton.Font = Enum.Font.SourceSans
 GravityButton.Text = "Set Gravity"
@@ -500,7 +503,7 @@ TpButton.Parent = Back1
 TpButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 TpButton.BackgroundTransparency = 0.500
 TpButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TpButton.Position = UDim2.new(0.0480000004, 0, 0.662823856, 0)
+TpButton.Position = UDim2.new(0.0480000004, 0, 0.561502278, 0)
 TpButton.Size = UDim2.new(0, 135, 0, 18)
 TpButton.Font = Enum.Font.SourceSans
 TpButton.Text = "Teleport to player"
@@ -520,7 +523,7 @@ Player.Parent = Back1
 Player.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 Player.BackgroundTransparency = 0.500
 Player.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Player.Position = UDim2.new(0.0480000004, 0, 0.781917095, 0)
+Player.Position = UDim2.new(0.0480000004, 0, 0.680000007, 0)
 Player.Size = UDim2.new(0, 135, 0, 18)
 Player.Font = Enum.Font.SourceSans
 Player.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
@@ -539,7 +542,7 @@ ResetButton.Parent = Back1
 ResetButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 ResetButton.BackgroundTransparency = 0.500
 ResetButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ResetButton.Position = UDim2.new(0.0480000004, 0, 0.906347156, 0)
+ResetButton.Position = UDim2.new(0.0480000004, 0, 0.800620258, 0)
 ResetButton.Size = UDim2.new(0, 135, 0, 18)
 ResetButton.Font = Enum.Font.SourceSans
 ResetButton.Text = "Reset character"
@@ -553,6 +556,26 @@ Gradient_22.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fro
 Gradient_22.Rotation = -90
 Gradient_22.Name = "Gradient"
 Gradient_22.Parent = ResetButton
+
+UnlockButton.Name = "UnlockButton"
+UnlockButton.Parent = Back1
+UnlockButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+UnlockButton.BackgroundTransparency = 0.500
+UnlockButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UnlockButton.Position = UDim2.new(0.0480000004, 0, 0.910000026, 0)
+UnlockButton.Size = UDim2.new(0, 135, 0, 18)
+UnlockButton.Font = Enum.Font.SourceSans
+UnlockButton.Text = "Unlock Workspace"
+UnlockButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+UnlockButton.TextSize = 15.000
+UnlockButton.TextWrapped = true
+UnlockButton.TextXAlignment = Enum.TextXAlignment.Left
+UnlockButton.TextYAlignment = Enum.TextYAlignment.Top
+
+Gradient_23.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+Gradient_23.Rotation = -90
+Gradient_23.Name = "Gradient"
+Gradient_23.Parent = UnlockButton
 
 CloseButton1.Name = "CloseButton1"
 CloseButton1.Parent = MiscellaneousTop
@@ -583,9 +606,23 @@ Title1.TextSize = 14.000
 Title1.TextWrapped = true
 Title1.TextXAlignment = Enum.TextXAlignment.Left
 
+InfoText.Name = "InfoText"
+InfoText.Parent = Gui
+InfoText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfoText.BackgroundTransparency = 1.000
+InfoText.Position = UDim2.new(0.0117540527, 0, 0.910112381, 0)
+InfoText.Size = UDim2.new(0, 234, 0, 50)
+InfoText.Font = Enum.Font.SourceSans
+InfoText.Text = "Future Hub, made by Aquotin v1.1_01 Press Right Shift to hide the gui."
+InfoText.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfoText.TextScaled = true
+InfoText.TextSize = 14.000
+InfoText.TextStrokeTransparency = 0.000
+InfoText.TextWrapped = true
+
 -- Scripts:
 
-local function MUBM_fake_script() -- BlocksTop.MoveScript 
+local function YCUSNPZ_fake_script() -- BlocksTop.MoveScript 
 	local script = Instance.new('LocalScript', BlocksTop)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -628,8 +665,8 @@ local function MUBM_fake_script() -- BlocksTop.MoveScript
 		end
 	end)
 end
-coroutine.wrap(MUBM_fake_script)()
-local function IWCFFTA_fake_script() -- SLuckyButton.LuckyScript4 
+coroutine.wrap(YCUSNPZ_fake_script)()
+local function KLDZZDJ_fake_script() -- SLuckyButton.LuckyScript4 
 	local script = Instance.new('LocalScript', SLuckyButton)
 
 	Button = script.Parent
@@ -638,8 +675,8 @@ local function IWCFFTA_fake_script() -- SLuckyButton.LuckyScript4
 		game.ReplicatedStorage.SpawnSuperBlock:FireServer()
 	end)
 end
-coroutine.wrap(IWCFFTA_fake_script)()
-local function NVYCQNP_fake_script() -- RGBButton.LuckyScript3 
+coroutine.wrap(KLDZZDJ_fake_script)()
+local function AAEJKQZ_fake_script() -- RGBButton.LuckyScript3 
 	local script = Instance.new('LocalScript', RGBButton)
 
 	Button = script.Parent
@@ -648,8 +685,8 @@ local function NVYCQNP_fake_script() -- RGBButton.LuckyScript3
 		game.ReplicatedStorage.SpawnRainbowBlock:FireServer()
 	end)
 end
-coroutine.wrap(NVYCQNP_fake_script)()
-local function AZIKSF_fake_script() -- LuckyButton.LuckyScript2 
+coroutine.wrap(AAEJKQZ_fake_script)()
+local function PZCMVL_fake_script() -- LuckyButton.LuckyScript2 
 	local script = Instance.new('LocalScript', LuckyButton)
 
 	Button = script.Parent
@@ -658,8 +695,8 @@ local function AZIKSF_fake_script() -- LuckyButton.LuckyScript2
 		game.ReplicatedStorage.SpawnLuckyBlock:FireServer()
 	end)
 end
-coroutine.wrap(AZIKSF_fake_script)()
-local function QVRSB_fake_script() -- DiamondButton.LuckyScript 
+coroutine.wrap(PZCMVL_fake_script)()
+local function HPHYCAX_fake_script() -- DiamondButton.LuckyScript 
 	local script = Instance.new('LocalScript', DiamondButton)
 
 	Button = script.Parent
@@ -668,8 +705,8 @@ local function QVRSB_fake_script() -- DiamondButton.LuckyScript
 		game.ReplicatedStorage.SpawnDiamondBlock:FireServer()
 	end)
 end
-coroutine.wrap(QVRSB_fake_script)()
-local function SDAANA_fake_script() -- GalaButton.LuckyScript1 
+coroutine.wrap(HPHYCAX_fake_script)()
+local function LLFCUW_fake_script() -- GalaButton.LuckyScript1 
 	local script = Instance.new('LocalScript', GalaButton)
 
 	Button = script.Parent
@@ -678,8 +715,8 @@ local function SDAANA_fake_script() -- GalaButton.LuckyScript1
 		game.ReplicatedStorage.SpawnGalaxyBlock:FireServer()
 	end)
 end
-coroutine.wrap(SDAANA_fake_script)()
-local function NHPIED_fake_script() -- CloseButton.O/CScript 
+coroutine.wrap(LLFCUW_fake_script)()
+local function JZDNMXE_fake_script() -- CloseButton.O/CScript 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	Button = script.Parent
@@ -696,52 +733,8 @@ local function NHPIED_fake_script() -- CloseButton.O/CScript
 		end
 	end)
 end
-coroutine.wrap(NHPIED_fake_script)()
-local function FFJIP_fake_script() -- MovementTop.MoveScript1 
-	local script = Instance.new('LocalScript', MovementTop)
-
-	local UserInputService = game:GetService("UserInputService")
-	
-	local gui = script.Parent
-	
-	local dragging
-	local dragInput
-	local dragStart
-	local startPos
-	
-	local function update(input)
-		local delta = input.Position - dragStart
-		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-	end
-	
-	script.Parent.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = gui.Position
-	
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
-		end
-	end)
-	
-	gui.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
-	end)
-	
-	UserInputService.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-	end)
-end
-coroutine.wrap(FFJIP_fake_script)()
-local function RJFQT_fake_script() -- FlyText.FlyScript 
+coroutine.wrap(JZDNMXE_fake_script)()
+local function YBEPS_fake_script() -- FlyText.FlyScript 
 	local script = Instance.new('LocalScript', FlyText)
 
 	lplayer = game:GetService("Players").LocalPlayer
@@ -827,8 +820,8 @@ local function RJFQT_fake_script() -- FlyText.FlyScript
 				script.FlyValue.Value = 0
 	end end end)
 end
-coroutine.wrap(RJFQT_fake_script)()
-local function UBTQUH_fake_script() -- SpeedButton.SpeedScript 
+coroutine.wrap(YBEPS_fake_script)()
+local function OUXMR_fake_script() -- SpeedButton.SpeedScript 
 	local script = Instance.new('LocalScript', SpeedButton)
 
 	Button = script.Parent
@@ -842,8 +835,8 @@ local function UBTQUH_fake_script() -- SpeedButton.SpeedScript
 		end
 	end)
 end
-coroutine.wrap(UBTQUH_fake_script)()
-local function WBAK_fake_script() -- JumpButton.JumpScript 
+coroutine.wrap(OUXMR_fake_script)()
+local function ZDSLDKQ_fake_script() -- JumpButton.JumpScript 
 	local script = Instance.new('LocalScript', JumpButton)
 
 	Button = script.Parent
@@ -857,8 +850,8 @@ local function WBAK_fake_script() -- JumpButton.JumpScript
 		end
 	end)
 end
-coroutine.wrap(WBAK_fake_script)()
-local function FRFTYN_fake_script() -- CloseButton2.O/CScript2 
+coroutine.wrap(ZDSLDKQ_fake_script)()
+local function JNSZY_fake_script() -- CloseButton2.O/CScript2 
 	local script = Instance.new('LocalScript', CloseButton2)
 
 	Button2 = script.Parent
@@ -875,8 +868,52 @@ local function FRFTYN_fake_script() -- CloseButton2.O/CScript2
 		end
 	end)
 end
-coroutine.wrap(FRFTYN_fake_script)()
-local function XFLBS_fake_script() -- MiscellaneousTop.MoveScript2 
+coroutine.wrap(JNSZY_fake_script)()
+local function MMYWD_fake_script() -- MovementTop.MoveScript1 
+	local script = Instance.new('LocalScript', MovementTop)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	script.Parent.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(MMYWD_fake_script)()
+local function WBXR_fake_script() -- MiscellaneousTop.MoveScript2 
 	local script = Instance.new('LocalScript', MiscellaneousTop)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -919,8 +956,8 @@ local function XFLBS_fake_script() -- MiscellaneousTop.MoveScript2
 		end
 	end)
 end
-coroutine.wrap(XFLBS_fake_script)()
-local function FJFW_fake_script() -- BtoolsButton.BtoolsScript 
+coroutine.wrap(WBXR_fake_script)()
+local function TXNFIN_fake_script() -- BtoolsButton.BtoolsScript 
 	local script = Instance.new('LocalScript', BtoolsButton)
 
 	Button = script.Parent
@@ -942,8 +979,8 @@ local function FJFW_fake_script() -- BtoolsButton.BtoolsScript
 		grab.Parent = game.Players.LocalPlayer.Backpack
 	end)
 end
-coroutine.wrap(FJFW_fake_script)()
-local function LHPSUN_fake_script() -- ClearBButton.ClearScript 
+coroutine.wrap(TXNFIN_fake_script)()
+local function ALHSZA_fake_script() -- ClearBButton.ClearScript 
 	local script = Instance.new('LocalScript', ClearBButton)
 
 	Button = script.Parent
@@ -952,8 +989,8 @@ local function LHPSUN_fake_script() -- ClearBButton.ClearScript
 		game.Players.LocalPlayer.Backpack:ClearAllChildren()
 	end)
 end
-coroutine.wrap(LHPSUN_fake_script)()
-local function EJAVRG_fake_script() -- InfJButton.InfJScript 
+coroutine.wrap(ALHSZA_fake_script)()
+local function PSJEA_fake_script() -- InfJButton.InfJScript 
 	local script = Instance.new('LocalScript', InfJButton)
 
 	Button = script.Parent
@@ -976,8 +1013,8 @@ local function EJAVRG_fake_script() -- InfJButton.InfJScript
 		end)
 	end)
 end
-coroutine.wrap(EJAVRG_fake_script)()
-local function PKZBWYL_fake_script() -- GravityButton.GravScript 
+coroutine.wrap(PSJEA_fake_script)()
+local function PZTMJIG_fake_script() -- GravityButton.GravScript 
 	local script = Instance.new('LocalScript', GravityButton)
 
 	Button = script.Parent
@@ -986,8 +1023,8 @@ local function PKZBWYL_fake_script() -- GravityButton.GravScript
 		Workspace.Gravity = script.Parent.Parent.Gravity.Text
 	end)
 end
-coroutine.wrap(PKZBWYL_fake_script)()
-local function ETEA_fake_script() -- TpButton.TpScript 
+coroutine.wrap(PZTMJIG_fake_script)()
+local function NFMV_fake_script() -- TpButton.TpScript 
 	local script = Instance.new('LocalScript', TpButton)
 
 	Button = script.Parent
@@ -997,8 +1034,8 @@ local function ETEA_fake_script() -- TpButton.TpScript
 		game.Players.LocalPlayer.Character.Torso.CFrame = CFrame.new(game.Workspace:FindFirstChild(Name).Torso.Position)
 	end)
 end
-coroutine.wrap(ETEA_fake_script)()
-local function PJRB_fake_script() -- ResetButton.ResetScript 
+coroutine.wrap(NFMV_fake_script)()
+local function BLCSD_fake_script() -- ResetButton.ResetScript 
 	local script = Instance.new('LocalScript', ResetButton)
 
 	ButtonR = script.Parent
@@ -1007,8 +1044,23 @@ local function PJRB_fake_script() -- ResetButton.ResetScript
 		game.Players.LocalPlayer.Character.Humanoid.Health = 0
 	end)
 end
-coroutine.wrap(PJRB_fake_script)()
-local function SHGANQK_fake_script() -- CloseButton1.O/CScript1 
+coroutine.wrap(BLCSD_fake_script)()
+local function TTLFBYV_fake_script() -- UnlockButton.UnlockAll 
+	local script = Instance.new('Script', UnlockButton)
+
+	function unlock(obj)
+	for i,v in pairs(obj:GetChildren()) do
+	if v:IsA("BasePart") then
+	v.Locked = false
+	end
+	unlock(v)
+	end
+	end
+	unlock(workspace)
+	
+end
+coroutine.wrap(TTLFBYV_fake_script)()
+local function OXIJBXI_fake_script() -- CloseButton1.O/CScript1 
 	local script = Instance.new('LocalScript', CloseButton1)
 
 	Button1 = script.Parent
@@ -1025,4 +1077,29 @@ local function SHGANQK_fake_script() -- CloseButton1.O/CScript1
 		end
 	end)
 end
-coroutine.wrap(SHGANQK_fake_script)()
+coroutine.wrap(OXIJBXI_fake_script)()
+local function AFFBJX_fake_script() -- Gui.HideLScript 
+	local script = Instance.new('LocalScript', Gui)
+
+	inp = game:GetService("UserInputService")
+	local wState = 1
+	
+	inp.InputBegan:Connect(function(input)
+		if input.KeyCode == Enum.KeyCode.RightShift then
+			if wState == 1 then
+				wState = 0
+				script.Parent.BlocksTop.Visible = false
+				script.Parent.MiscellaneousTop.Visible = false
+				script.Parent.MovementTop.Visible = false
+				script.Parent.InfoText.Text = "Press RightShift to show the gui."
+			elseif wState == 0 then
+				wState = 1
+				script.Parent.BlocksTop.Visible = true
+				script.Parent.MiscellaneousTop.Visible = true
+				script.Parent.MovementTop.Visible = true
+				script.Parent.InfoText.Text = "Future Hub, made by Aquotin v1.1_01 Press Right Shift to hide the gui."
+			end
+		end
+	end)
+end
+coroutine.wrap(AFFBJX_fake_script)()
