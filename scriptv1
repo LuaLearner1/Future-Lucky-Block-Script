@@ -613,7 +613,7 @@ InfoText.BackgroundTransparency = 1.000
 InfoText.Position = UDim2.new(0.0117540527, 0, 0.910112381, 0)
 InfoText.Size = UDim2.new(0, 234, 0, 50)
 InfoText.Font = Enum.Font.SourceSans
-InfoText.Text = "Future Hub, made by Aquotin v1.1_01 Press Right Shift to hide the gui."
+InfoText.Text = "Future Hub, made by Aquotin v1.2 Press Right Shift to hide the gui."
 InfoText.TextColor3 = Color3.fromRGB(255, 255, 255)
 InfoText.TextScaled = true
 InfoText.TextSize = 14.000
@@ -622,7 +622,7 @@ InfoText.TextWrapped = true
 
 -- Scripts:
 
-local function YCUSNPZ_fake_script() -- BlocksTop.MoveScript 
+local function JXXKW_fake_script() -- BlocksTop.MoveScript 
 	local script = Instance.new('LocalScript', BlocksTop)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -665,8 +665,8 @@ local function YCUSNPZ_fake_script() -- BlocksTop.MoveScript
 		end
 	end)
 end
-coroutine.wrap(YCUSNPZ_fake_script)()
-local function KLDZZDJ_fake_script() -- SLuckyButton.LuckyScript4 
+coroutine.wrap(JXXKW_fake_script)()
+local function RKSL_fake_script() -- SLuckyButton.LuckyScript4 
 	local script = Instance.new('LocalScript', SLuckyButton)
 
 	Button = script.Parent
@@ -675,8 +675,8 @@ local function KLDZZDJ_fake_script() -- SLuckyButton.LuckyScript4
 		game.ReplicatedStorage.SpawnSuperBlock:FireServer()
 	end)
 end
-coroutine.wrap(KLDZZDJ_fake_script)()
-local function AAEJKQZ_fake_script() -- RGBButton.LuckyScript3 
+coroutine.wrap(RKSL_fake_script)()
+local function WLHZOX_fake_script() -- RGBButton.LuckyScript3 
 	local script = Instance.new('LocalScript', RGBButton)
 
 	Button = script.Parent
@@ -685,8 +685,8 @@ local function AAEJKQZ_fake_script() -- RGBButton.LuckyScript3
 		game.ReplicatedStorage.SpawnRainbowBlock:FireServer()
 	end)
 end
-coroutine.wrap(AAEJKQZ_fake_script)()
-local function PZCMVL_fake_script() -- LuckyButton.LuckyScript2 
+coroutine.wrap(WLHZOX_fake_script)()
+local function ZCHSR_fake_script() -- LuckyButton.LuckyScript2 
 	local script = Instance.new('LocalScript', LuckyButton)
 
 	Button = script.Parent
@@ -695,8 +695,8 @@ local function PZCMVL_fake_script() -- LuckyButton.LuckyScript2
 		game.ReplicatedStorage.SpawnLuckyBlock:FireServer()
 	end)
 end
-coroutine.wrap(PZCMVL_fake_script)()
-local function HPHYCAX_fake_script() -- DiamondButton.LuckyScript 
+coroutine.wrap(ZCHSR_fake_script)()
+local function KOKD_fake_script() -- DiamondButton.LuckyScript 
 	local script = Instance.new('LocalScript', DiamondButton)
 
 	Button = script.Parent
@@ -705,8 +705,8 @@ local function HPHYCAX_fake_script() -- DiamondButton.LuckyScript
 		game.ReplicatedStorage.SpawnDiamondBlock:FireServer()
 	end)
 end
-coroutine.wrap(HPHYCAX_fake_script)()
-local function LLFCUW_fake_script() -- GalaButton.LuckyScript1 
+coroutine.wrap(KOKD_fake_script)()
+local function UEIRJM_fake_script() -- GalaButton.LuckyScript1 
 	local script = Instance.new('LocalScript', GalaButton)
 
 	Button = script.Parent
@@ -715,8 +715,8 @@ local function LLFCUW_fake_script() -- GalaButton.LuckyScript1
 		game.ReplicatedStorage.SpawnGalaxyBlock:FireServer()
 	end)
 end
-coroutine.wrap(LLFCUW_fake_script)()
-local function JZDNMXE_fake_script() -- CloseButton.O/CScript 
+coroutine.wrap(UEIRJM_fake_script)()
+local function KSLIPPJ_fake_script() -- CloseButton.O/CScript 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	Button = script.Parent
@@ -733,25 +733,25 @@ local function JZDNMXE_fake_script() -- CloseButton.O/CScript
 		end
 	end)
 end
-coroutine.wrap(JZDNMXE_fake_script)()
-local function YBEPS_fake_script() -- FlyText.FlyScript 
+coroutine.wrap(KSLIPPJ_fake_script)()
+local function CYOLMX_fake_script() -- FlyText.FlyScript 
 	local script = Instance.new('LocalScript', FlyText)
 
-	lplayer = game:GetService("Players").LocalPlayer
-	local Mouse = lplayer:GetMouse()
+	lfplayer = game:GetService("Players").LocalPlayer
+	local Mouse = lfplayer:GetMouse()
 	flying = false
 	local potato = 1
 	Mouse.KeyDown:connect(function(key)
 	    if key == "f" then
 		if potato == 1 then
-		    repeat wait() until lplayer and lplayer.Character and lplayer.Character:FindFirstChild('HumanoidRootPart') and lplayer.Character:FindFirstChild('Humanoid')
+				repeat wait() until lfplayer and lfplayer.Character and lfplayer.Character:FindFirstChild('HumanoidRootPart') and lfplayer.Character:FindFirstChild('Humanoid')
 	    repeat wait() until Mouse
 	    speedfly = script.Parent.Parent.FlySpeed.Text
 	   
-	    local T = lplayer.Character.HumanoidRootPart
+				local T = lfplayer.Character.HumanoidRootPart
 	    local CONTROL = {F = 0, B = 0, L = 0, R = 0}
 	    local lCONTROL = {F = 0, B = 0, L = 0, R = 0}
-	    local SPEED = speedget
+				local SPEED = speedfly
 	   
 	    local function fly()
 					flying = true
@@ -765,7 +765,7 @@ local function YBEPS_fake_script() -- FlyText.FlyScript
 	        BV.maxForce = Vector3.new(9e9, 9e9, 9e9)
 	        spawn(function()
 	        repeat wait()
-	        lplayer.Character.Humanoid.PlatformStand = true
+							lfplayer.Character.Humanoid.PlatformStand = true
 	        if CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0 then
 	        SPEED = 50
 	        elseif not (CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0) and SPEED ~= 0 then
@@ -786,7 +786,7 @@ local function YBEPS_fake_script() -- FlyText.FlyScript
 	                SPEED = 0
 	                BG:destroy()
 	                BV:destroy()
-	                lplayer.Character.Humanoid.PlatformStand = false
+						lfplayer.Character.Humanoid.PlatformStand = false
 	            end)
 	        end
 	    Mouse.KeyDown:connect(function(KEY)
@@ -815,13 +815,13 @@ local function YBEPS_fake_script() -- FlyText.FlyScript
 	    fly()
 	    else 
 			flying = false
-	        lplayer.Character.Humanoid.PlatformStand = false
+				lfplayer.Character.Humanoid.PlatformStand = false
 				potato = 1
 				script.FlyValue.Value = 0
 	end end end)
 end
-coroutine.wrap(YBEPS_fake_script)()
-local function OUXMR_fake_script() -- SpeedButton.SpeedScript 
+coroutine.wrap(CYOLMX_fake_script)()
+local function WGWJW_fake_script() -- SpeedButton.SpeedScript 
 	local script = Instance.new('LocalScript', SpeedButton)
 
 	Button = script.Parent
@@ -835,8 +835,8 @@ local function OUXMR_fake_script() -- SpeedButton.SpeedScript
 		end
 	end)
 end
-coroutine.wrap(OUXMR_fake_script)()
-local function ZDSLDKQ_fake_script() -- JumpButton.JumpScript 
+coroutine.wrap(WGWJW_fake_script)()
+local function LMZXEO_fake_script() -- JumpButton.JumpScript 
 	local script = Instance.new('LocalScript', JumpButton)
 
 	Button = script.Parent
@@ -850,8 +850,8 @@ local function ZDSLDKQ_fake_script() -- JumpButton.JumpScript
 		end
 	end)
 end
-coroutine.wrap(ZDSLDKQ_fake_script)()
-local function JNSZY_fake_script() -- CloseButton2.O/CScript2 
+coroutine.wrap(LMZXEO_fake_script)()
+local function VVCRV_fake_script() -- CloseButton2.O/CScript2 
 	local script = Instance.new('LocalScript', CloseButton2)
 
 	Button2 = script.Parent
@@ -868,8 +868,8 @@ local function JNSZY_fake_script() -- CloseButton2.O/CScript2
 		end
 	end)
 end
-coroutine.wrap(JNSZY_fake_script)()
-local function MMYWD_fake_script() -- MovementTop.MoveScript1 
+coroutine.wrap(VVCRV_fake_script)()
+local function WGJQX_fake_script() -- MovementTop.MoveScript1 
 	local script = Instance.new('LocalScript', MovementTop)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -912,8 +912,8 @@ local function MMYWD_fake_script() -- MovementTop.MoveScript1
 		end
 	end)
 end
-coroutine.wrap(MMYWD_fake_script)()
-local function WBXR_fake_script() -- MiscellaneousTop.MoveScript2 
+coroutine.wrap(WGJQX_fake_script)()
+local function DMBZNSP_fake_script() -- MiscellaneousTop.MoveScript2 
 	local script = Instance.new('LocalScript', MiscellaneousTop)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -956,8 +956,8 @@ local function WBXR_fake_script() -- MiscellaneousTop.MoveScript2
 		end
 	end)
 end
-coroutine.wrap(WBXR_fake_script)()
-local function TXNFIN_fake_script() -- BtoolsButton.BtoolsScript 
+coroutine.wrap(DMBZNSP_fake_script)()
+local function WACIPEV_fake_script() -- BtoolsButton.BtoolsScript 
 	local script = Instance.new('LocalScript', BtoolsButton)
 
 	Button = script.Parent
@@ -979,8 +979,8 @@ local function TXNFIN_fake_script() -- BtoolsButton.BtoolsScript
 		grab.Parent = game.Players.LocalPlayer.Backpack
 	end)
 end
-coroutine.wrap(TXNFIN_fake_script)()
-local function ALHSZA_fake_script() -- ClearBButton.ClearScript 
+coroutine.wrap(WACIPEV_fake_script)()
+local function AQPCJKF_fake_script() -- ClearBButton.ClearScript 
 	local script = Instance.new('LocalScript', ClearBButton)
 
 	Button = script.Parent
@@ -989,8 +989,8 @@ local function ALHSZA_fake_script() -- ClearBButton.ClearScript
 		game.Players.LocalPlayer.Backpack:ClearAllChildren()
 	end)
 end
-coroutine.wrap(ALHSZA_fake_script)()
-local function PSJEA_fake_script() -- InfJButton.InfJScript 
+coroutine.wrap(AQPCJKF_fake_script)()
+local function OXKWIB_fake_script() -- InfJButton.InfJScript 
 	local script = Instance.new('LocalScript', InfJButton)
 
 	Button = script.Parent
@@ -1013,8 +1013,8 @@ local function PSJEA_fake_script() -- InfJButton.InfJScript
 		end)
 	end)
 end
-coroutine.wrap(PSJEA_fake_script)()
-local function PZTMJIG_fake_script() -- GravityButton.GravScript 
+coroutine.wrap(OXKWIB_fake_script)()
+local function JFREV_fake_script() -- GravityButton.GravScript 
 	local script = Instance.new('LocalScript', GravityButton)
 
 	Button = script.Parent
@@ -1023,8 +1023,8 @@ local function PZTMJIG_fake_script() -- GravityButton.GravScript
 		Workspace.Gravity = script.Parent.Parent.Gravity.Text
 	end)
 end
-coroutine.wrap(PZTMJIG_fake_script)()
-local function NFMV_fake_script() -- TpButton.TpScript 
+coroutine.wrap(JFREV_fake_script)()
+local function KZCBUVC_fake_script() -- TpButton.TpScript 
 	local script = Instance.new('LocalScript', TpButton)
 
 	Button = script.Parent
@@ -1034,8 +1034,8 @@ local function NFMV_fake_script() -- TpButton.TpScript
 		game.Players.LocalPlayer.Character.Torso.CFrame = CFrame.new(game.Workspace:FindFirstChild(Name).Torso.Position)
 	end)
 end
-coroutine.wrap(NFMV_fake_script)()
-local function BLCSD_fake_script() -- ResetButton.ResetScript 
+coroutine.wrap(KZCBUVC_fake_script)()
+local function YFYB_fake_script() -- ResetButton.ResetScript 
 	local script = Instance.new('LocalScript', ResetButton)
 
 	ButtonR = script.Parent
@@ -1044,8 +1044,8 @@ local function BLCSD_fake_script() -- ResetButton.ResetScript
 		game.Players.LocalPlayer.Character.Humanoid.Health = 0
 	end)
 end
-coroutine.wrap(BLCSD_fake_script)()
-local function TTLFBYV_fake_script() -- UnlockButton.UnlockAll 
+coroutine.wrap(YFYB_fake_script)()
+local function CZBE_fake_script() -- UnlockButton.UnlockAll 
 	local script = Instance.new('Script', UnlockButton)
 
 	function unlock(obj)
@@ -1059,8 +1059,8 @@ local function TTLFBYV_fake_script() -- UnlockButton.UnlockAll
 	unlock(workspace)
 	
 end
-coroutine.wrap(TTLFBYV_fake_script)()
-local function OXIJBXI_fake_script() -- CloseButton1.O/CScript1 
+coroutine.wrap(CZBE_fake_script)()
+local function IPIDGN_fake_script() -- CloseButton1.O/CScript1 
 	local script = Instance.new('LocalScript', CloseButton1)
 
 	Button1 = script.Parent
@@ -1077,8 +1077,8 @@ local function OXIJBXI_fake_script() -- CloseButton1.O/CScript1
 		end
 	end)
 end
-coroutine.wrap(OXIJBXI_fake_script)()
-local function AFFBJX_fake_script() -- Gui.HideLScript 
+coroutine.wrap(IPIDGN_fake_script)()
+local function WFWWBE_fake_script() -- Gui.HideLScript 
 	local script = Instance.new('LocalScript', Gui)
 
 	inp = game:GetService("UserInputService")
@@ -1097,9 +1097,9 @@ local function AFFBJX_fake_script() -- Gui.HideLScript
 				script.Parent.BlocksTop.Visible = true
 				script.Parent.MiscellaneousTop.Visible = true
 				script.Parent.MovementTop.Visible = true
-				script.Parent.InfoText.Text = "Future Hub, made by Aquotin v1.1_01 Press Right Shift to hide the gui."
+				script.Parent.InfoText.Text = "Future Hub, made by Aquotin v1.2 Press Right Shift to hide the gui."
 			end
 		end
 	end)
 end
-coroutine.wrap(AFFBJX_fake_script)()
+coroutine.wrap(WFWWBE_fake_script)()
