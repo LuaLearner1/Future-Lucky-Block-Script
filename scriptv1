@@ -622,7 +622,7 @@ InfoText.TextWrapped = true
 
 -- Scripts:
 
-local function JXXKW_fake_script() -- BlocksTop.MoveScript 
+local function PKIWA_fake_script() -- BlocksTop.MoveScript 
 	local script = Instance.new('LocalScript', BlocksTop)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -665,8 +665,8 @@ local function JXXKW_fake_script() -- BlocksTop.MoveScript
 		end
 	end)
 end
-coroutine.wrap(JXXKW_fake_script)()
-local function RKSL_fake_script() -- SLuckyButton.LuckyScript4 
+coroutine.wrap(PKIWA_fake_script)()
+local function GBEOGCO_fake_script() -- SLuckyButton.LuckyScript4 
 	local script = Instance.new('LocalScript', SLuckyButton)
 
 	Button = script.Parent
@@ -675,8 +675,8 @@ local function RKSL_fake_script() -- SLuckyButton.LuckyScript4
 		game.ReplicatedStorage.SpawnSuperBlock:FireServer()
 	end)
 end
-coroutine.wrap(RKSL_fake_script)()
-local function WLHZOX_fake_script() -- RGBButton.LuckyScript3 
+coroutine.wrap(GBEOGCO_fake_script)()
+local function JUVWNAR_fake_script() -- RGBButton.LuckyScript3 
 	local script = Instance.new('LocalScript', RGBButton)
 
 	Button = script.Parent
@@ -685,8 +685,8 @@ local function WLHZOX_fake_script() -- RGBButton.LuckyScript3
 		game.ReplicatedStorage.SpawnRainbowBlock:FireServer()
 	end)
 end
-coroutine.wrap(WLHZOX_fake_script)()
-local function ZCHSR_fake_script() -- LuckyButton.LuckyScript2 
+coroutine.wrap(JUVWNAR_fake_script)()
+local function KHPZ_fake_script() -- LuckyButton.LuckyScript2 
 	local script = Instance.new('LocalScript', LuckyButton)
 
 	Button = script.Parent
@@ -695,8 +695,8 @@ local function ZCHSR_fake_script() -- LuckyButton.LuckyScript2
 		game.ReplicatedStorage.SpawnLuckyBlock:FireServer()
 	end)
 end
-coroutine.wrap(ZCHSR_fake_script)()
-local function KOKD_fake_script() -- DiamondButton.LuckyScript 
+coroutine.wrap(KHPZ_fake_script)()
+local function MAEXECS_fake_script() -- DiamondButton.LuckyScript 
 	local script = Instance.new('LocalScript', DiamondButton)
 
 	Button = script.Parent
@@ -705,8 +705,8 @@ local function KOKD_fake_script() -- DiamondButton.LuckyScript
 		game.ReplicatedStorage.SpawnDiamondBlock:FireServer()
 	end)
 end
-coroutine.wrap(KOKD_fake_script)()
-local function UEIRJM_fake_script() -- GalaButton.LuckyScript1 
+coroutine.wrap(MAEXECS_fake_script)()
+local function ONUQDXC_fake_script() -- GalaButton.LuckyScript1 
 	local script = Instance.new('LocalScript', GalaButton)
 
 	Button = script.Parent
@@ -715,8 +715,8 @@ local function UEIRJM_fake_script() -- GalaButton.LuckyScript1
 		game.ReplicatedStorage.SpawnGalaxyBlock:FireServer()
 	end)
 end
-coroutine.wrap(UEIRJM_fake_script)()
-local function KSLIPPJ_fake_script() -- CloseButton.O/CScript 
+coroutine.wrap(ONUQDXC_fake_script)()
+local function XWITESB_fake_script() -- CloseButton.O/CScript 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	Button = script.Parent
@@ -733,95 +733,93 @@ local function KSLIPPJ_fake_script() -- CloseButton.O/CScript
 		end
 	end)
 end
-coroutine.wrap(KSLIPPJ_fake_script)()
-local function CYOLMX_fake_script() -- FlyText.FlyScript 
+coroutine.wrap(XWITESB_fake_script)()
+local function RNGX_fake_script() -- FlyText.FlyScript 
 	local script = Instance.new('LocalScript', FlyText)
 
-	lfplayer = game:GetService("Players").LocalPlayer
-	local Mouse = lfplayer:GetMouse()
+	lplayer = game:GetService("Players").LocalPlayer
+	local Mouse = lplayer:GetMouse()
 	flying = false
 	local potato = 1
 	Mouse.KeyDown:connect(function(key)
-	    if key == "f" then
-		if potato == 1 then
-				repeat wait() until lfplayer and lfplayer.Character and lfplayer.Character:FindFirstChild('HumanoidRootPart') and lfplayer.Character:FindFirstChild('Humanoid')
-	    repeat wait() until Mouse
-	    speedfly = script.Parent.Parent.FlySpeed.Text
-	   
-				local T = lfplayer.Character.HumanoidRootPart
-	    local CONTROL = {F = 0, B = 0, L = 0, R = 0}
-	    local lCONTROL = {F = 0, B = 0, L = 0, R = 0}
-				local SPEED = speedfly
-	   
-	    local function fly()
+		if key == "f" then
+			if potato == 1 then
+				repeat wait() until lplayer and lplayer.Character and lplayer.Character:FindFirstChild('HumanoidRootPart') and lplayer.Character:FindFirstChild('Humanoid')
+				repeat wait() until Mouse
+				speedfly = script.Parent.Parent.FlySpeed.Text
+	
+				local T        = lplayer.Character.HumanoidRootPart
+				local CONTROL  = {F = 0, B = 0, L = 0, R = 0}
+				local lCONTROL = {F = 0, B = 0, L = 0, R = 0}
+				local SPEED    = speedfly
+	
+				local function fly()
 					flying = true
-					script.FlyValue.Value = 1
-	        local BG = Instance.new('BodyGyro', T)
-	        local BV = Instance.new('BodyVelocity', T)
-	        BG.P = 9e4
-	        BG.maxTorque = Vector3.new(9e9, 9e9, 9e9)
-	        BG.cframe = T.CFrame
-	        BV.velocity = Vector3.new(0, 0.1, 0)
-	        BV.maxForce = Vector3.new(9e9, 9e9, 9e9)
-	        spawn(function()
-	        repeat wait()
-							lfplayer.Character.Humanoid.PlatformStand = true
-	        if CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0 then
-	        SPEED = 50
-	        elseif not (CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0) and SPEED ~= 0 then
-	        SPEED = 0
-	        end
-	        if (CONTROL.L + CONTROL.R) ~= 0 or (CONTROL.F + CONTROL.B) ~= 0 then
-	        BV.velocity = ((workspace.CurrentCamera.CoordinateFrame.lookVector * (CONTROL.F + CONTROL.B)) + ((workspace.CurrentCamera.CoordinateFrame * CFrame.new(CONTROL.L + CONTROL.R, (CONTROL.F + CONTROL.B) * 0.2, 0).p) - workspace.CurrentCamera.CoordinateFrame.p)) * SPEED
-	        lCONTROL = {F = CONTROL.F, B = CONTROL.B, L = CONTROL.L, R = CONTROL.R}
-	        elseif (CONTROL.L + CONTROL.R) == 0 and (CONTROL.F + CONTROL.B) == 0 and SPEED ~= 0 then
-	        BV.velocity = ((workspace.CurrentCamera.CoordinateFrame.lookVector * (lCONTROL.F + lCONTROL.B)) + ((workspace.CurrentCamera.CoordinateFrame * CFrame.new(lCONTROL.L + lCONTROL.R, (lCONTROL.F + lCONTROL.B) * 0.2, 0).p) - workspace.CurrentCamera.CoordinateFrame.p)) * SPEED
-	        else
-	        BV.velocity = Vector3.new(0, 0.1, 0)
-	        end
-	        BG.cframe = workspace.CurrentCamera.CoordinateFrame
-	                until not flying
-	                CONTROL = {F = 0, B = 0, L = 0, R = 0}
-	                lCONTROL = {F = 0, B = 0, L = 0, R = 0}
-	                SPEED = 0
-	                BG:destroy()
-	                BV:destroy()
-						lfplayer.Character.Humanoid.PlatformStand = false
-	            end)
-	        end
-	    Mouse.KeyDown:connect(function(KEY)
-	        if KEY:lower() == 'w' then
-	            CONTROL.F = speedfly
-	        elseif KEY:lower() == 's' then
-	            CONTROL.B = -speedfly
-	        elseif KEY:lower() == 'a' then
-	            CONTROL.L = -speedfly
-	        elseif KEY:lower() == 'd' then
-	            CONTROL.R = speedfly
-	        end
-	    end)
-	    Mouse.KeyUp:connect(function(KEY)
-	        if KEY:lower() == 'w' then
-	            CONTROL.F = 0
-	        elseif KEY:lower() == 's' then
-	            CONTROL.B = 0
-	        elseif KEY:lower() == 'a' then
-	            CONTROL.L = 0
-	        elseif KEY:lower() == 'd' then
-	            CONTROL.R = 0
-	        end
-	    end)
-	potato = 0
-	    fly()
-	    else 
-			flying = false
-				lfplayer.Character.Humanoid.PlatformStand = false
+					local BG = Instance.new('BodyGyro', T)
+					local BV = Instance.new('BodyVelocity', T)
+					BG.P = 9e4
+					BG.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+					BG.cframe = T.CFrame
+					BV.velocity = Vector3.new(0, 0.1, 0)
+					BV.maxForce = Vector3.new(9e9, 9e9, 9e9)
+					spawn(function()
+						repeat wait()
+							lplayer.Character.Humanoid.PlatformStand = true
+							if CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0 then
+								SPEED = 50
+							elseif not (CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0) and SPEED ~= 0 then
+								SPEED = 0
+							end
+							if (CONTROL.L + CONTROL.R) ~= 0 or (CONTROL.F + CONTROL.B) ~= 0 then
+								BV.velocity = ((workspace.CurrentCamera.CoordinateFrame.lookVector * (CONTROL.F + CONTROL.B)) + ((workspace.CurrentCamera.CoordinateFrame * CFrame.new(CONTROL.L + CONTROL.R, (CONTROL.F + CONTROL.B) * 0.2, 0).p) - workspace.CurrentCamera.CoordinateFrame.p)) * SPEED
+								lCONTROL = {F = CONTROL.F, B = CONTROL.B, L = CONTROL.L, R = CONTROL.R}
+							elseif (CONTROL.L + CONTROL.R) == 0 and (CONTROL.F + CONTROL.B) == 0 and SPEED ~= 0 then
+								BV.velocity = ((workspace.CurrentCamera.CoordinateFrame.lookVector * (lCONTROL.F + lCONTROL.B)) + ((workspace.CurrentCamera.CoordinateFrame * CFrame.new(lCONTROL.L + lCONTROL.R, (lCONTROL.F + lCONTROL.B) * 0.2, 0).p) - workspace.CurrentCamera.CoordinateFrame.p)) * SPEED
+							else
+								BV.velocity = Vector3.new(0, 0.1, 0)
+							end
+							BG.cframe = workspace.CurrentCamera.CoordinateFrame
+						until not flying
+						CONTROL = {F = 0, B = 0, L = 0, R = 0}
+						lCONTROL = {F = 0, B = 0, L = 0, R = 0}
+						SPEED = 0
+						BG:destroy()
+						BV:destroy()
+						lplayer.Character.Humanoid.PlatformStand = false
+					end)
+				end
+				Mouse.KeyDown:connect(function(KEY)
+					if KEY:lower() == 'w' then
+						CONTROL.F = speedfly
+					elseif KEY:lower() == 's' then
+						CONTROL.B = -speedfly
+					elseif KEY:lower() == 'a' then
+						CONTROL.L = -speedfly
+					elseif KEY:lower() == 'd' then
+						CONTROL.R = speedfly
+					end
+				end)
+				Mouse.KeyUp:connect(function(KEY)
+					if KEY:lower() == 'w' then
+						CONTROL.F = 0
+					elseif KEY:lower() == 's' then
+						CONTROL.B = 0
+					elseif KEY:lower() == 'a' then
+						CONTROL.L = 0
+					elseif KEY:lower() == 'd' then
+						CONTROL.R = 0
+					end
+				end)
+				potato = 0
+				fly()
+			else 
+				flying = false
+				lplayer.Character.Humanoid.PlatformStand = false
 				potato = 1
-				script.FlyValue.Value = 0
-	end end end)
+			end end end)
 end
-coroutine.wrap(CYOLMX_fake_script)()
-local function WGWJW_fake_script() -- SpeedButton.SpeedScript 
+coroutine.wrap(RNGX_fake_script)()
+local function RCSZFT_fake_script() -- SpeedButton.SpeedScript 
 	local script = Instance.new('LocalScript', SpeedButton)
 
 	Button = script.Parent
@@ -835,8 +833,8 @@ local function WGWJW_fake_script() -- SpeedButton.SpeedScript
 		end
 	end)
 end
-coroutine.wrap(WGWJW_fake_script)()
-local function LMZXEO_fake_script() -- JumpButton.JumpScript 
+coroutine.wrap(RCSZFT_fake_script)()
+local function JALIFJ_fake_script() -- JumpButton.JumpScript 
 	local script = Instance.new('LocalScript', JumpButton)
 
 	Button = script.Parent
@@ -850,8 +848,8 @@ local function LMZXEO_fake_script() -- JumpButton.JumpScript
 		end
 	end)
 end
-coroutine.wrap(LMZXEO_fake_script)()
-local function VVCRV_fake_script() -- CloseButton2.O/CScript2 
+coroutine.wrap(JALIFJ_fake_script)()
+local function GAFSQ_fake_script() -- CloseButton2.O/CScript2 
 	local script = Instance.new('LocalScript', CloseButton2)
 
 	Button2 = script.Parent
@@ -868,8 +866,8 @@ local function VVCRV_fake_script() -- CloseButton2.O/CScript2
 		end
 	end)
 end
-coroutine.wrap(VVCRV_fake_script)()
-local function WGJQX_fake_script() -- MovementTop.MoveScript1 
+coroutine.wrap(GAFSQ_fake_script)()
+local function DALAEX_fake_script() -- MovementTop.MoveScript1 
 	local script = Instance.new('LocalScript', MovementTop)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -912,8 +910,8 @@ local function WGJQX_fake_script() -- MovementTop.MoveScript1
 		end
 	end)
 end
-coroutine.wrap(WGJQX_fake_script)()
-local function DMBZNSP_fake_script() -- MiscellaneousTop.MoveScript2 
+coroutine.wrap(DALAEX_fake_script)()
+local function IEXSFTG_fake_script() -- MiscellaneousTop.MoveScript2 
 	local script = Instance.new('LocalScript', MiscellaneousTop)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -956,8 +954,8 @@ local function DMBZNSP_fake_script() -- MiscellaneousTop.MoveScript2
 		end
 	end)
 end
-coroutine.wrap(DMBZNSP_fake_script)()
-local function WACIPEV_fake_script() -- BtoolsButton.BtoolsScript 
+coroutine.wrap(IEXSFTG_fake_script)()
+local function QNPCAY_fake_script() -- BtoolsButton.BtoolsScript 
 	local script = Instance.new('LocalScript', BtoolsButton)
 
 	Button = script.Parent
@@ -979,8 +977,8 @@ local function WACIPEV_fake_script() -- BtoolsButton.BtoolsScript
 		grab.Parent = game.Players.LocalPlayer.Backpack
 	end)
 end
-coroutine.wrap(WACIPEV_fake_script)()
-local function AQPCJKF_fake_script() -- ClearBButton.ClearScript 
+coroutine.wrap(QNPCAY_fake_script)()
+local function KJMT_fake_script() -- ClearBButton.ClearScript 
 	local script = Instance.new('LocalScript', ClearBButton)
 
 	Button = script.Parent
@@ -989,8 +987,8 @@ local function AQPCJKF_fake_script() -- ClearBButton.ClearScript
 		game.Players.LocalPlayer.Backpack:ClearAllChildren()
 	end)
 end
-coroutine.wrap(AQPCJKF_fake_script)()
-local function OXKWIB_fake_script() -- InfJButton.InfJScript 
+coroutine.wrap(KJMT_fake_script)()
+local function MTNDN_fake_script() -- InfJButton.InfJScript 
 	local script = Instance.new('LocalScript', InfJButton)
 
 	Button = script.Parent
@@ -1013,8 +1011,8 @@ local function OXKWIB_fake_script() -- InfJButton.InfJScript
 		end)
 	end)
 end
-coroutine.wrap(OXKWIB_fake_script)()
-local function JFREV_fake_script() -- GravityButton.GravScript 
+coroutine.wrap(MTNDN_fake_script)()
+local function TRWNLR_fake_script() -- GravityButton.GravScript 
 	local script = Instance.new('LocalScript', GravityButton)
 
 	Button = script.Parent
@@ -1023,8 +1021,8 @@ local function JFREV_fake_script() -- GravityButton.GravScript
 		Workspace.Gravity = script.Parent.Parent.Gravity.Text
 	end)
 end
-coroutine.wrap(JFREV_fake_script)()
-local function KZCBUVC_fake_script() -- TpButton.TpScript 
+coroutine.wrap(TRWNLR_fake_script)()
+local function GHYKD_fake_script() -- TpButton.TpScript 
 	local script = Instance.new('LocalScript', TpButton)
 
 	Button = script.Parent
@@ -1034,8 +1032,8 @@ local function KZCBUVC_fake_script() -- TpButton.TpScript
 		game.Players.LocalPlayer.Character.Torso.CFrame = CFrame.new(game.Workspace:FindFirstChild(Name).Torso.Position)
 	end)
 end
-coroutine.wrap(KZCBUVC_fake_script)()
-local function YFYB_fake_script() -- ResetButton.ResetScript 
+coroutine.wrap(GHYKD_fake_script)()
+local function KKWKMI_fake_script() -- ResetButton.ResetScript 
 	local script = Instance.new('LocalScript', ResetButton)
 
 	ButtonR = script.Parent
@@ -1044,8 +1042,8 @@ local function YFYB_fake_script() -- ResetButton.ResetScript
 		game.Players.LocalPlayer.Character.Humanoid.Health = 0
 	end)
 end
-coroutine.wrap(YFYB_fake_script)()
-local function CZBE_fake_script() -- UnlockButton.UnlockAll 
+coroutine.wrap(KKWKMI_fake_script)()
+local function PAHKJD_fake_script() -- UnlockButton.UnlockAll 
 	local script = Instance.new('Script', UnlockButton)
 
 	function unlock(obj)
@@ -1059,8 +1057,8 @@ local function CZBE_fake_script() -- UnlockButton.UnlockAll
 	unlock(workspace)
 	
 end
-coroutine.wrap(CZBE_fake_script)()
-local function IPIDGN_fake_script() -- CloseButton1.O/CScript1 
+coroutine.wrap(PAHKJD_fake_script)()
+local function TIUNGO_fake_script() -- CloseButton1.O/CScript1 
 	local script = Instance.new('LocalScript', CloseButton1)
 
 	Button1 = script.Parent
@@ -1077,8 +1075,8 @@ local function IPIDGN_fake_script() -- CloseButton1.O/CScript1
 		end
 	end)
 end
-coroutine.wrap(IPIDGN_fake_script)()
-local function WFWWBE_fake_script() -- Gui.HideLScript 
+coroutine.wrap(TIUNGO_fake_script)()
+local function FBVHE_fake_script() -- Gui.HideLScript 
 	local script = Instance.new('LocalScript', Gui)
 
 	inp = game:GetService("UserInputService")
@@ -1102,4 +1100,4 @@ local function WFWWBE_fake_script() -- Gui.HideLScript
 		end
 	end)
 end
-coroutine.wrap(WFWWBE_fake_script)()
+coroutine.wrap(FBVHE_fake_script)()
