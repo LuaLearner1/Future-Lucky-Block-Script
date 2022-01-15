@@ -44,17 +44,22 @@ local Gravity = Instance.new("TextBox")
 local Gradient_18 = Instance.new("UIGradient")
 local GravityButton = Instance.new("TextButton")
 local Gradient_19 = Instance.new("UIGradient")
-local TpButton = Instance.new("TextButton")
-local Gradient_20 = Instance.new("UIGradient")
-local Player = Instance.new("TextBox")
-local Gradient_21 = Instance.new("UIGradient")
 local ResetButton = Instance.new("TextButton")
-local Gradient_22 = Instance.new("UIGradient")
+local Gradient_20 = Instance.new("UIGradient")
 local UnlockButton = Instance.new("TextButton")
-local Gradient_23 = Instance.new("UIGradient")
+local Gradient_21 = Instance.new("UIGradient")
 local CloseButton1 = Instance.new("TextButton")
 local Title1 = Instance.new("TextLabel")
 local InfoText = Instance.new("TextLabel")
+local VisualsTop = Instance.new("Frame")
+local Back3 = Instance.new("Frame")
+local Gradient_22 = Instance.new("UIGradient")
+local EspButton = Instance.new("TextButton")
+local Gradient_23 = Instance.new("UIGradient")
+local Esp = Instance.new("TextBox")
+local Gradient_24 = Instance.new("UIGradient")
+local CloseButton3 = Instance.new("TextButton")
+local Title3 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -392,7 +397,7 @@ Back1.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 Back1.BackgroundTransparency = 0.500
 Back1.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Back1.Position = UDim2.new(-0.0019999186, 0, 1.00000036, 0)
-Back1.Size = UDim2.new(0, 150, 0, 227)
+Back1.Size = UDim2.new(0, 150, 0, 183)
 
 Gradient_14.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
 Gradient_14.Rotation = -90
@@ -424,7 +429,7 @@ ClearBButton.Parent = Back1
 ClearBButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 ClearBButton.BackgroundTransparency = 0.500
 ClearBButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ClearBButton.Position = UDim2.new(0.0480000004, 0, 0.0964721218, 0)
+ClearBButton.Position = UDim2.new(0.0549999997, 0, 0.140000001, 0)
 ClearBButton.Size = UDim2.new(0, 135, 0, 18)
 ClearBButton.Font = Enum.Font.SourceSans
 ClearBButton.Text = "Clear Inventory"
@@ -444,7 +449,7 @@ InfJButton.Parent = Back1
 InfJButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 InfJButton.BackgroundTransparency = 0.500
 InfJButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-InfJButton.Position = UDim2.new(0.0480000004, 0, 0.208125576, 0)
+InfJButton.Position = UDim2.new(0.0549999997, 0, 0.300000012, 0)
 InfJButton.Size = UDim2.new(0, 135, 0, 18)
 InfJButton.Font = Enum.Font.SourceSans
 InfJButton.Text = "Infinite jump"
@@ -464,7 +469,7 @@ Gravity.Parent = Back1
 Gravity.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 Gravity.BackgroundTransparency = 0.500
 Gravity.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Gravity.Position = UDim2.new(0.0480000004, 0, 0.448891342, 0)
+Gravity.Position = UDim2.new(0.0480000004, 0, 0.607361317, 0)
 Gravity.Size = UDim2.new(0, 135, 0, 18)
 Gravity.Font = Enum.Font.SourceSans
 Gravity.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
@@ -483,7 +488,7 @@ GravityButton.Parent = Back1
 GravityButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 GravityButton.BackgroundTransparency = 0.500
 GravityButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-GravityButton.Position = UDim2.new(0.0480000004, 0, 0.32591778, 0)
+GravityButton.Position = UDim2.new(0.0480000004, 0, 0.449999988, 0)
 GravityButton.Size = UDim2.new(0, 135, 0, 18)
 GravityButton.Font = Enum.Font.SourceSans
 GravityButton.Text = "Set Gravity"
@@ -498,51 +503,12 @@ Gradient_19.Rotation = -90
 Gradient_19.Name = "Gradient"
 Gradient_19.Parent = GravityButton
 
-TpButton.Name = "TpButton"
-TpButton.Parent = Back1
-TpButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-TpButton.BackgroundTransparency = 0.500
-TpButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TpButton.Position = UDim2.new(0.0480000004, 0, 0.561502278, 0)
-TpButton.Size = UDim2.new(0, 135, 0, 18)
-TpButton.Font = Enum.Font.SourceSans
-TpButton.Text = "Teleport to player"
-TpButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-TpButton.TextSize = 15.000
-TpButton.TextWrapped = true
-TpButton.TextXAlignment = Enum.TextXAlignment.Left
-TpButton.TextYAlignment = Enum.TextYAlignment.Top
-
-Gradient_20.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-Gradient_20.Rotation = -90
-Gradient_20.Name = "Gradient"
-Gradient_20.Parent = TpButton
-
-Player.Name = "Player"
-Player.Parent = Back1
-Player.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-Player.BackgroundTransparency = 0.500
-Player.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Player.Position = UDim2.new(0.0480000004, 0, 0.680000007, 0)
-Player.Size = UDim2.new(0, 135, 0, 18)
-Player.Font = Enum.Font.SourceSans
-Player.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
-Player.PlaceholderText = "Player name here"
-Player.Text = ""
-Player.TextColor3 = Color3.fromRGB(255, 255, 255)
-Player.TextSize = 14.000
-
-Gradient_21.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-Gradient_21.Rotation = -90
-Gradient_21.Name = "Gradient"
-Gradient_21.Parent = Player
-
 ResetButton.Name = "ResetButton"
 ResetButton.Parent = Back1
 ResetButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 ResetButton.BackgroundTransparency = 0.500
 ResetButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ResetButton.Position = UDim2.new(0.0480000004, 0, 0.800620258, 0)
+ResetButton.Position = UDim2.new(0.0546666682, 0, 0.762368858, 0)
 ResetButton.Size = UDim2.new(0, 135, 0, 18)
 ResetButton.Font = Enum.Font.SourceSans
 ResetButton.Text = "Reset character"
@@ -552,17 +518,17 @@ ResetButton.TextWrapped = true
 ResetButton.TextXAlignment = Enum.TextXAlignment.Left
 ResetButton.TextYAlignment = Enum.TextYAlignment.Top
 
-Gradient_22.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-Gradient_22.Rotation = -90
-Gradient_22.Name = "Gradient"
-Gradient_22.Parent = ResetButton
+Gradient_20.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+Gradient_20.Rotation = -90
+Gradient_20.Name = "Gradient"
+Gradient_20.Parent = ResetButton
 
 UnlockButton.Name = "UnlockButton"
 UnlockButton.Parent = Back1
 UnlockButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 UnlockButton.BackgroundTransparency = 0.500
 UnlockButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-UnlockButton.Position = UDim2.new(0.0480000004, 0, 0.910000026, 0)
+UnlockButton.Position = UDim2.new(0.0480000004, 0, 0.899071038, 0)
 UnlockButton.Size = UDim2.new(0, 135, 0, 18)
 UnlockButton.Font = Enum.Font.SourceSans
 UnlockButton.Text = "Unlock Workspace"
@@ -572,10 +538,10 @@ UnlockButton.TextWrapped = true
 UnlockButton.TextXAlignment = Enum.TextXAlignment.Left
 UnlockButton.TextYAlignment = Enum.TextYAlignment.Top
 
-Gradient_23.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-Gradient_23.Rotation = -90
-Gradient_23.Name = "Gradient"
-Gradient_23.Parent = UnlockButton
+Gradient_21.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+Gradient_21.Rotation = -90
+Gradient_21.Name = "Gradient"
+Gradient_21.Parent = UnlockButton
 
 CloseButton1.Name = "CloseButton1"
 CloseButton1.Parent = MiscellaneousTop
@@ -613,491 +579,655 @@ InfoText.BackgroundTransparency = 1.000
 InfoText.Position = UDim2.new(0.0117540527, 0, 0.910112381, 0)
 InfoText.Size = UDim2.new(0, 234, 0, 50)
 InfoText.Font = Enum.Font.SourceSans
-InfoText.Text = "Future Hub, made by Aquotin v1.2 Press Right Shift to hide the gui."
+InfoText.Text = "Future Hub, made by Aquotin v1.3 Press Right Shift to hide the gui."
 InfoText.TextColor3 = Color3.fromRGB(255, 255, 255)
 InfoText.TextScaled = true
 InfoText.TextSize = 14.000
 InfoText.TextStrokeTransparency = 0.000
 InfoText.TextWrapped = true
 
+VisualsTop.Name = "VisualsTop"
+VisualsTop.Parent = Gui
+VisualsTop.BackgroundColor3 = Color3.fromRGB(175, 0, 0)
+VisualsTop.BackgroundTransparency = 0.450
+VisualsTop.BorderColor3 = Color3.fromRGB(0, 0, 0)
+VisualsTop.Position = UDim2.new(0.698506057, 0, 0.0592221953, 0)
+VisualsTop.Size = UDim2.new(0, 150, 0, 25)
+
+Back3.Name = "Back3"
+Back3.Parent = VisualsTop
+Back3.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Back3.BackgroundTransparency = 0.500
+Back3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Back3.Position = UDim2.new(-0.0019999186, 0, 1.00000036, 0)
+Back3.Size = UDim2.new(0, 150, 0, 52)
+
+Gradient_22.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+Gradient_22.Rotation = -90
+Gradient_22.Name = "Gradient"
+Gradient_22.Parent = Back3
+
+EspButton.Name = "EspButton"
+EspButton.Parent = Back3
+EspButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+EspButton.BackgroundTransparency = 0.500
+EspButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EspButton.Position = UDim2.new(0.0483332872, 0, -0.00192898512, 0)
+EspButton.Size = UDim2.new(0, 135, 0, 18)
+EspButton.Font = Enum.Font.SourceSans
+EspButton.Text = "Esp"
+EspButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+EspButton.TextSize = 15.000
+EspButton.TextWrapped = true
+EspButton.TextXAlignment = Enum.TextXAlignment.Left
+EspButton.TextYAlignment = Enum.TextYAlignment.Top
+
+Gradient_23.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+Gradient_23.Rotation = -90
+Gradient_23.Name = "Gradient"
+Gradient_23.Parent = EspButton
+
+Esp.Name = "Esp"
+Esp.Parent = Back3
+Esp.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Esp.BackgroundTransparency = 0.500
+Esp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Esp.Position = UDim2.new(0.0480000004, 0, 0.525814414, 0)
+Esp.Size = UDim2.new(0, 135, 0, 18)
+Esp.Font = Enum.Font.SourceSans
+Esp.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+Esp.PlaceholderText = "Player or NPC name"
+Esp.Text = ""
+Esp.TextColor3 = Color3.fromRGB(255, 255, 255)
+Esp.TextSize = 14.000
+Esp.TextWrapped = true
+
+Gradient_24.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+Gradient_24.Rotation = -90
+Gradient_24.Name = "Gradient"
+Gradient_24.Parent = Esp
+
+CloseButton3.Name = "CloseButton3"
+CloseButton3.Parent = VisualsTop
+CloseButton3.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+CloseButton3.BackgroundTransparency = 0.500
+CloseButton3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CloseButton3.Position = UDim2.new(0.853333354, 0, 0.200000018, 0)
+CloseButton3.Size = UDim2.new(0, 15, 0, 15)
+CloseButton3.Font = Enum.Font.SciFi
+CloseButton3.Text = "-"
+CloseButton3.TextColor3 = Color3.fromRGB(0, 0, 0)
+CloseButton3.TextScaled = true
+CloseButton3.TextSize = 14.000
+CloseButton3.TextWrapped = true
+
+Title3.Name = "Title3"
+Title3.Parent = VisualsTop
+Title3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title3.BackgroundTransparency = 1.000
+Title3.BorderSizePixel = 0
+Title3.Position = UDim2.new(0.00999999978, 0, 0.119999997, 0)
+Title3.Size = UDim2.new(0, 100, 0, 18)
+Title3.Font = Enum.Font.SourceSans
+Title3.Text = "Visuals"
+Title3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title3.TextScaled = true
+Title3.TextSize = 14.000
+Title3.TextWrapped = true
+Title3.TextXAlignment = Enum.TextXAlignment.Left
+
 -- Scripts:
 
-local function PKIWA_fake_script() -- BlocksTop.MoveScript 
-	local script = Instance.new('LocalScript', BlocksTop)
+local function ZMDTO_fake_script() -- BlocksTop.MoveScript 
+    local script = Instance.new('LocalScript', BlocksTop)
 
-	local UserInputService = game:GetService("UserInputService")
-	
-	local gui = script.Parent
-	
-	local dragging
-	local dragInput
-	local dragStart
-	local startPos
-	
-	local function update(input)
-		local delta = input.Position - dragStart
-		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-	end
-	
-	script.Parent.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = gui.Position
-	
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
-		end
-	end)
-	
-	gui.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
-	end)
-	
-	UserInputService.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-	end)
+    local UserInputService = game:GetService("UserInputService")
+    
+    local gui = script.Parent
+    
+    local dragging
+    local dragInput
+    local dragStart
+    local startPos
+    
+    local function update(input)
+        local delta = input.Position - dragStart
+        gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+    end
+    
+    script.Parent.InputBegan:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+            dragging = true
+            dragStart = input.Position
+            startPos = gui.Position
+    
+            input.Changed:Connect(function()
+                if input.UserInputState == Enum.UserInputState.End then
+                    dragging = false
+                end
+            end)
+        end
+    end)
+    
+    gui.InputChanged:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+            dragInput = input
+        end
+    end)
+    
+    UserInputService.InputChanged:Connect(function(input)
+        if input == dragInput and dragging then
+            update(input)
+        end
+    end)
 end
-coroutine.wrap(PKIWA_fake_script)()
-local function GBEOGCO_fake_script() -- SLuckyButton.LuckyScript4 
-	local script = Instance.new('LocalScript', SLuckyButton)
+coroutine.wrap(ZMDTO_fake_script)()
+local function WMQX_fake_script() -- SLuckyButton.LuckyScript4 
+    local script = Instance.new('LocalScript', SLuckyButton)
 
-	Button = script.Parent
-	
-	Button.MouseButton1Click:Connect(function()
-		game.ReplicatedStorage.SpawnSuperBlock:FireServer()
-	end)
+    Button = script.Parent
+    
+    Button.MouseButton1Click:Connect(function()
+        game.ReplicatedStorage.SpawnSuperBlock:FireServer()
+    end)
 end
-coroutine.wrap(GBEOGCO_fake_script)()
-local function JUVWNAR_fake_script() -- RGBButton.LuckyScript3 
-	local script = Instance.new('LocalScript', RGBButton)
+coroutine.wrap(WMQX_fake_script)()
+local function AGGPBJR_fake_script() -- RGBButton.LuckyScript3 
+    local script = Instance.new('LocalScript', RGBButton)
 
-	Button = script.Parent
-	
-	Button.MouseButton1Click:Connect(function()
-		game.ReplicatedStorage.SpawnRainbowBlock:FireServer()
-	end)
+    Button = script.Parent
+    
+    Button.MouseButton1Click:Connect(function()
+        game.ReplicatedStorage.SpawnRainbowBlock:FireServer()
+    end)
 end
-coroutine.wrap(JUVWNAR_fake_script)()
-local function KHPZ_fake_script() -- LuckyButton.LuckyScript2 
-	local script = Instance.new('LocalScript', LuckyButton)
+coroutine.wrap(AGGPBJR_fake_script)()
+local function FHTZ_fake_script() -- LuckyButton.LuckyScript2 
+    local script = Instance.new('LocalScript', LuckyButton)
 
-	Button = script.Parent
-	
-	Button.MouseButton1Click:Connect(function()
-		game.ReplicatedStorage.SpawnLuckyBlock:FireServer()
-	end)
+    Button = script.Parent
+    
+    Button.MouseButton1Click:Connect(function()
+        game.ReplicatedStorage.SpawnLuckyBlock:FireServer()
+    end)
 end
-coroutine.wrap(KHPZ_fake_script)()
-local function MAEXECS_fake_script() -- DiamondButton.LuckyScript 
-	local script = Instance.new('LocalScript', DiamondButton)
+coroutine.wrap(FHTZ_fake_script)()
+local function UTJC_fake_script() -- DiamondButton.LuckyScript 
+    local script = Instance.new('LocalScript', DiamondButton)
 
-	Button = script.Parent
-	
-	Button.MouseButton1Click:Connect(function()
-		game.ReplicatedStorage.SpawnDiamondBlock:FireServer()
-	end)
+    Button = script.Parent
+    
+    Button.MouseButton1Click:Connect(function()
+        game.ReplicatedStorage.SpawnDiamondBlock:FireServer()
+    end)
 end
-coroutine.wrap(MAEXECS_fake_script)()
-local function ONUQDXC_fake_script() -- GalaButton.LuckyScript1 
-	local script = Instance.new('LocalScript', GalaButton)
+coroutine.wrap(UTJC_fake_script)()
+local function IXYV_fake_script() -- GalaButton.LuckyScript1 
+    local script = Instance.new('LocalScript', GalaButton)
 
-	Button = script.Parent
-	
-	Button.MouseButton1Click:Connect(function()
-		game.ReplicatedStorage.SpawnGalaxyBlock:FireServer()
-	end)
+    Button = script.Parent
+    
+    Button.MouseButton1Click:Connect(function()
+        game.ReplicatedStorage.SpawnGalaxyBlock:FireServer()
+    end)
 end
-coroutine.wrap(ONUQDXC_fake_script)()
-local function XWITESB_fake_script() -- CloseButton.O/CScript 
-	local script = Instance.new('LocalScript', CloseButton)
+coroutine.wrap(IXYV_fake_script)()
+local function MEPCIUM_fake_script() -- CloseButton.O/CScript 
+    local script = Instance.new('LocalScript', CloseButton)
 
-	Button = script.Parent
-	Back = script.Parent.Parent.Back
-	local OorC = 1
-	
-	Button.MouseButton1Click:Connect(function()
-		if OorC == 1 then
-			Back.Visible = false
-			OorC = 0
-		elseif OorC == 0 then
-			Back.Visible = true
-			OorC = 1
-		end
-	end)
+    Button = script.Parent
+    Back = script.Parent.Parent.Back
+    local OorC = 1
+    
+    Button.MouseButton1Click:Connect(function()
+        if OorC == 1 then
+            Back.Visible = false
+            OorC = 0
+        elseif OorC == 0 then
+            Back.Visible = true
+            OorC = 1
+        end
+    end)
 end
-coroutine.wrap(XWITESB_fake_script)()
-local function RNGX_fake_script() -- FlyText.FlyScript 
-	local script = Instance.new('LocalScript', FlyText)
+coroutine.wrap(MEPCIUM_fake_script)()
+local function GHRJP_fake_script() -- FlyText.FlyScript 
+    local script = Instance.new('LocalScript', FlyText)
 
-	lplayer = game:GetService("Players").LocalPlayer
-	local Mouse = lplayer:GetMouse()
-	flying = false
-	local potato = 1
-	Mouse.KeyDown:connect(function(key)
-		if key == "f" then
-			if potato == 1 then
-				repeat wait() until lplayer and lplayer.Character and lplayer.Character:FindFirstChild('HumanoidRootPart') and lplayer.Character:FindFirstChild('Humanoid')
-				repeat wait() until Mouse
-				speedfly = script.Parent.Parent.FlySpeed.Text
-	
-				local T        = lplayer.Character.HumanoidRootPart
-				local CONTROL  = {F = 0, B = 0, L = 0, R = 0}
-				local lCONTROL = {F = 0, B = 0, L = 0, R = 0}
-				local SPEED    = speedfly
-	
-				local function fly()
-					flying = true
-					local BG = Instance.new('BodyGyro', T)
-					local BV = Instance.new('BodyVelocity', T)
-					BG.P = 9e4
-					BG.maxTorque = Vector3.new(9e9, 9e9, 9e9)
-					BG.cframe = T.CFrame
-					BV.velocity = Vector3.new(0, 0.1, 0)
-					BV.maxForce = Vector3.new(9e9, 9e9, 9e9)
-					spawn(function()
-						repeat wait()
-							lplayer.Character.Humanoid.PlatformStand = true
-							if CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0 then
-								SPEED = 50
-							elseif not (CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0) and SPEED ~= 0 then
-								SPEED = 0
-							end
-							if (CONTROL.L + CONTROL.R) ~= 0 or (CONTROL.F + CONTROL.B) ~= 0 then
-								BV.velocity = ((workspace.CurrentCamera.CoordinateFrame.lookVector * (CONTROL.F + CONTROL.B)) + ((workspace.CurrentCamera.CoordinateFrame * CFrame.new(CONTROL.L + CONTROL.R, (CONTROL.F + CONTROL.B) * 0.2, 0).p) - workspace.CurrentCamera.CoordinateFrame.p)) * SPEED
-								lCONTROL = {F = CONTROL.F, B = CONTROL.B, L = CONTROL.L, R = CONTROL.R}
-							elseif (CONTROL.L + CONTROL.R) == 0 and (CONTROL.F + CONTROL.B) == 0 and SPEED ~= 0 then
-								BV.velocity = ((workspace.CurrentCamera.CoordinateFrame.lookVector * (lCONTROL.F + lCONTROL.B)) + ((workspace.CurrentCamera.CoordinateFrame * CFrame.new(lCONTROL.L + lCONTROL.R, (lCONTROL.F + lCONTROL.B) * 0.2, 0).p) - workspace.CurrentCamera.CoordinateFrame.p)) * SPEED
-							else
-								BV.velocity = Vector3.new(0, 0.1, 0)
-							end
-							BG.cframe = workspace.CurrentCamera.CoordinateFrame
-						until not flying
-						CONTROL = {F = 0, B = 0, L = 0, R = 0}
-						lCONTROL = {F = 0, B = 0, L = 0, R = 0}
-						SPEED = 0
-						BG:destroy()
-						BV:destroy()
-						lplayer.Character.Humanoid.PlatformStand = false
-					end)
-				end
-				Mouse.KeyDown:connect(function(KEY)
-					if KEY:lower() == 'w' then
-						CONTROL.F = speedfly
-					elseif KEY:lower() == 's' then
-						CONTROL.B = -speedfly
-					elseif KEY:lower() == 'a' then
-						CONTROL.L = -speedfly
-					elseif KEY:lower() == 'd' then
-						CONTROL.R = speedfly
-					end
-				end)
-				Mouse.KeyUp:connect(function(KEY)
-					if KEY:lower() == 'w' then
-						CONTROL.F = 0
-					elseif KEY:lower() == 's' then
-						CONTROL.B = 0
-					elseif KEY:lower() == 'a' then
-						CONTROL.L = 0
-					elseif KEY:lower() == 'd' then
-						CONTROL.R = 0
-					end
-				end)
-				potato = 0
-				fly()
-			else 
-				flying = false
-				lplayer.Character.Humanoid.PlatformStand = false
-				potato = 1
-			end end end)
+    lplayer = game:GetService("Players").LocalPlayer
+    local Mouse = lplayer:GetMouse()
+    flying = false
+    local potato = 1
+    Mouse.KeyDown:connect(function(key)
+        if key == "f" then
+            if potato == 1 then
+                repeat wait() until lplayer and lplayer.Character and lplayer.Character:FindFirstChild('HumanoidRootPart') and lplayer.Character:FindFirstChild('Humanoid')
+                repeat wait() until Mouse
+                speedfly = script.Parent.Parent.FlySpeed.Text
+    
+                local T        = lplayer.Character.HumanoidRootPart
+                local CONTROL  = {F = 0, B = 0, L = 0, R = 0}
+                local lCONTROL = {F = 0, B = 0, L = 0, R = 0}
+                local SPEED    = speedfly
+    
+                local function fly()
+                    flying = true
+                    local BG = Instance.new('BodyGyro', T)
+                    local BV = Instance.new('BodyVelocity', T)
+                    BG.P = 9e4
+                    BG.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+                    BG.cframe = T.CFrame
+                    BV.velocity = Vector3.new(0, 0.1, 0)
+                    BV.maxForce = Vector3.new(9e9, 9e9, 9e9)
+                    spawn(function()
+                        repeat wait()
+                            lplayer.Character.Humanoid.PlatformStand = true
+                            if CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0 then
+                                SPEED = 50
+                            elseif not (CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0) and SPEED ~= 0 then
+                                SPEED = 0
+                            end
+                            if (CONTROL.L + CONTROL.R) ~= 0 or (CONTROL.F + CONTROL.B) ~= 0 then
+                                BV.velocity = ((workspace.CurrentCamera.CoordinateFrame.lookVector * (CONTROL.F + CONTROL.B)) + ((workspace.CurrentCamera.CoordinateFrame * CFrame.new(CONTROL.L + CONTROL.R, (CONTROL.F + CONTROL.B) * 0.2, 0).p) - workspace.CurrentCamera.CoordinateFrame.p)) * SPEED
+                                lCONTROL = {F = CONTROL.F, B = CONTROL.B, L = CONTROL.L, R = CONTROL.R}
+                            elseif (CONTROL.L + CONTROL.R) == 0 and (CONTROL.F + CONTROL.B) == 0 and SPEED ~= 0 then
+                                BV.velocity = ((workspace.CurrentCamera.CoordinateFrame.lookVector * (lCONTROL.F + lCONTROL.B)) + ((workspace.CurrentCamera.CoordinateFrame * CFrame.new(lCONTROL.L + lCONTROL.R, (lCONTROL.F + lCONTROL.B) * 0.2, 0).p) - workspace.CurrentCamera.CoordinateFrame.p)) * SPEED
+                            else
+                                BV.velocity = Vector3.new(0, 0.1, 0)
+                            end
+                            BG.cframe = workspace.CurrentCamera.CoordinateFrame
+                        until not flying
+                        CONTROL = {F = 0, B = 0, L = 0, R = 0}
+                        lCONTROL = {F = 0, B = 0, L = 0, R = 0}
+                        SPEED = 0
+                        BG:destroy()
+                        BV:destroy()
+                        lplayer.Character.Humanoid.PlatformStand = false
+                    end)
+                end
+                Mouse.KeyDown:connect(function(KEY)
+                    if KEY:lower() == 'w' then
+                        CONTROL.F = speedfly
+                    elseif KEY:lower() == 's' then
+                        CONTROL.B = -speedfly
+                    elseif KEY:lower() == 'a' then
+                        CONTROL.L = -speedfly
+                    elseif KEY:lower() == 'd' then
+                        CONTROL.R = speedfly
+                    end
+                end)
+                Mouse.KeyUp:connect(function(KEY)
+                    if KEY:lower() == 'w' then
+                        CONTROL.F = 0
+                    elseif KEY:lower() == 's' then
+                        CONTROL.B = 0
+                    elseif KEY:lower() == 'a' then
+                        CONTROL.L = 0
+                    elseif KEY:lower() == 'd' then
+                        CONTROL.R = 0
+                    end
+                end)
+                potato = 0
+                fly()
+            else 
+                flying = false
+                lplayer.Character.Humanoid.PlatformStand = false
+                potato = 1
+            end end end)
 end
-coroutine.wrap(RNGX_fake_script)()
-local function RCSZFT_fake_script() -- SpeedButton.SpeedScript 
-	local script = Instance.new('LocalScript', SpeedButton)
+coroutine.wrap(GHRJP_fake_script)()
+local function XIVWX_fake_script() -- SpeedButton.SpeedScript 
+    local script = Instance.new('LocalScript', SpeedButton)
 
-	Button = script.Parent
-	
-	Button.MouseButton1Click:Connect(function()
-		local player = game.Players.LocalPlayer
-		local setspeed = script.Parent.Parent.Speed.Text
-		local hum = game.Workspace:WaitForChild(player.Name).Humanoid
-		if hum then
-			hum.WalkSpeed = setspeed
-		end
-	end)
+    Button = script.Parent
+    
+    Button.MouseButton1Click:Connect(function()
+        local player = game.Players.LocalPlayer
+        local setspeed = script.Parent.Parent.Speed.Text
+        local hum = game.Workspace:WaitForChild(player.Name).Humanoid
+        if hum then
+            hum.WalkSpeed = setspeed
+        end
+    end)
 end
-coroutine.wrap(RCSZFT_fake_script)()
-local function JALIFJ_fake_script() -- JumpButton.JumpScript 
-	local script = Instance.new('LocalScript', JumpButton)
+coroutine.wrap(XIVWX_fake_script)()
+local function WUQT_fake_script() -- JumpButton.JumpScript 
+    local script = Instance.new('LocalScript', JumpButton)
 
-	Button = script.Parent
-	
-	Button.MouseButton1Click:Connect(function()
-		local player = game.Players.LocalPlayer
-		local setspeed = script.Parent.Parent.Jump.Text
-		local hum = game.Workspace:WaitForChild(player.Name).Humanoid
-		if hum then
-			hum.JumpPower = setspeed
-		end
-	end)
+    Button = script.Parent
+    
+    Button.MouseButton1Click:Connect(function()
+        local player = game.Players.LocalPlayer
+        local setspeed = script.Parent.Parent.Jump.Text
+        local hum = game.Workspace:WaitForChild(player.Name).Humanoid
+        if hum then
+            hum.JumpPower = setspeed
+        end
+    end)
 end
-coroutine.wrap(JALIFJ_fake_script)()
-local function GAFSQ_fake_script() -- CloseButton2.O/CScript2 
-	local script = Instance.new('LocalScript', CloseButton2)
+coroutine.wrap(WUQT_fake_script)()
+local function BAAAMWA_fake_script() -- CloseButton2.O/CScript2 
+    local script = Instance.new('LocalScript', CloseButton2)
 
-	Button2 = script.Parent
-	Back2 = script.Parent.Parent.Back2
-	local OorC2 = 1
-	
-	Button2.MouseButton1Click:Connect(function()
-		if OorC2 == 1 then
-			Back2.Visible = false
-			OorC2 = 0
-		elseif OorC2 == 0 then
-			Back2.Visible = true
-			OorC2 = 1
-		end
-	end)
+    Button2 = script.Parent
+    Back2 = script.Parent.Parent.Back2
+    local OorC2 = 1
+    
+    Button2.MouseButton1Click:Connect(function()
+        if OorC2 == 1 then
+            Back2.Visible = false
+            OorC2 = 0
+        elseif OorC2 == 0 then
+            Back2.Visible = true
+            OorC2 = 1
+        end
+    end)
 end
-coroutine.wrap(GAFSQ_fake_script)()
-local function DALAEX_fake_script() -- MovementTop.MoveScript1 
-	local script = Instance.new('LocalScript', MovementTop)
+coroutine.wrap(BAAAMWA_fake_script)()
+local function JJXWD_fake_script() -- MovementTop.MoveScript1 
+    local script = Instance.new('LocalScript', MovementTop)
 
-	local UserInputService = game:GetService("UserInputService")
-	
-	local gui = script.Parent
-	
-	local dragging
-	local dragInput
-	local dragStart
-	local startPos
-	
-	local function update(input)
-		local delta = input.Position - dragStart
-		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-	end
-	
-	script.Parent.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = gui.Position
-	
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
-		end
-	end)
-	
-	gui.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
-	end)
-	
-	UserInputService.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-	end)
+    local UserInputService = game:GetService("UserInputService")
+    
+    local gui = script.Parent
+    
+    local dragging
+    local dragInput
+    local dragStart
+    local startPos
+    
+    local function update(input)
+        local delta = input.Position - dragStart
+        gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+    end
+    
+    script.Parent.InputBegan:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+            dragging = true
+            dragStart = input.Position
+            startPos = gui.Position
+    
+            input.Changed:Connect(function()
+                if input.UserInputState == Enum.UserInputState.End then
+                    dragging = false
+                end
+            end)
+        end
+    end)
+    
+    gui.InputChanged:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+            dragInput = input
+        end
+    end)
+    
+    UserInputService.InputChanged:Connect(function(input)
+        if input == dragInput and dragging then
+            update(input)
+        end
+    end)
 end
-coroutine.wrap(DALAEX_fake_script)()
-local function IEXSFTG_fake_script() -- MiscellaneousTop.MoveScript2 
-	local script = Instance.new('LocalScript', MiscellaneousTop)
+coroutine.wrap(JJXWD_fake_script)()
+local function KFTNW_fake_script() -- MiscellaneousTop.MoveScript2 
+    local script = Instance.new('LocalScript', MiscellaneousTop)
 
-	local UserInputService = game:GetService("UserInputService")
-	
-	local gui = script.Parent
-	
-	local dragging
-	local dragInput
-	local dragStart
-	local startPos
-	
-	local function update(input)
-		local delta = input.Position - dragStart
-		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-	end
-	
-	script.Parent.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = gui.Position
-	
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
-		end
-	end)
-	
-	gui.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
-	end)
-	
-	UserInputService.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-	end)
+    local UserInputService = game:GetService("UserInputService")
+    
+    local gui = script.Parent
+    
+    local dragging
+    local dragInput
+    local dragStart
+    local startPos
+    
+    local function update(input)
+        local delta = input.Position - dragStart
+        gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+    end
+    
+    script.Parent.InputBegan:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+            dragging = true
+            dragStart = input.Position
+            startPos = gui.Position
+    
+            input.Changed:Connect(function()
+                if input.UserInputState == Enum.UserInputState.End then
+                    dragging = false
+                end
+            end)
+        end
+    end)
+    
+    gui.InputChanged:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+            dragInput = input
+        end
+    end)
+    
+    UserInputService.InputChanged:Connect(function(input)
+        if input == dragInput and dragging then
+            update(input)
+        end
+    end)
 end
-coroutine.wrap(IEXSFTG_fake_script)()
-local function QNPCAY_fake_script() -- BtoolsButton.BtoolsScript 
-	local script = Instance.new('LocalScript', BtoolsButton)
+coroutine.wrap(KFTNW_fake_script)()
+local function CSGRIQ_fake_script() -- BtoolsButton.BtoolsScript 
+    local script = Instance.new('LocalScript', BtoolsButton)
 
-	Button = script.Parent
-	
-	Button.MouseButton1Click:Connect(function()
-		local copy = Instance.new("HopperBin")
-		copy.Name = "Copy"
-		copy.BinType = "Clone"
-		copy.Parent = game.Players.LocalPlayer.Backpack
-	
-		local delete = Instance.new("HopperBin")
-		delete.Name = "Delete"
-		delete.BinType = "Hammer"
-		delete.Parent = game.Players.LocalPlayer.Backpack
-	
-		local grab = Instance.new("HopperBin")
-		grab.Name = "Grab"
-		grab.BinType = "Grab"
-		grab.Parent = game.Players.LocalPlayer.Backpack
-	end)
+    Button = script.Parent
+    
+    Button.MouseButton1Click:Connect(function()
+        local copy = Instance.new("HopperBin")
+        copy.Name = "Copy"
+        copy.BinType = "Clone"
+        copy.Parent = game.Players.LocalPlayer.Backpack
+    
+        local delete = Instance.new("HopperBin")
+        delete.Name = "Delete"
+        delete.BinType = "Hammer"
+        delete.Parent = game.Players.LocalPlayer.Backpack
+    
+        local grab = Instance.new("HopperBin")
+        grab.Name = "Grab"
+        grab.BinType = "Grab"
+        grab.Parent = game.Players.LocalPlayer.Backpack
+    end)
 end
-coroutine.wrap(QNPCAY_fake_script)()
-local function KJMT_fake_script() -- ClearBButton.ClearScript 
-	local script = Instance.new('LocalScript', ClearBButton)
+coroutine.wrap(CSGRIQ_fake_script)()
+local function YOIF_fake_script() -- ClearBButton.ClearScript 
+    local script = Instance.new('LocalScript', ClearBButton)
 
-	Button = script.Parent
-	
-	Button.MouseButton1Click:Connect(function()
-		game.Players.LocalPlayer.Backpack:ClearAllChildren()
-	end)
+    Button = script.Parent
+    
+    Button.MouseButton1Click:Connect(function()
+        game.Players.LocalPlayer.Backpack:ClearAllChildren()
+    end)
 end
-coroutine.wrap(KJMT_fake_script)()
-local function MTNDN_fake_script() -- InfJButton.InfJScript 
-	local script = Instance.new('LocalScript', InfJButton)
+coroutine.wrap(YOIF_fake_script)()
+local function MZDMLA_fake_script() -- InfJButton.InfJScript 
+    local script = Instance.new('LocalScript', InfJButton)
 
-	Button = script.Parent
-	
-	Button.MouseButton1Click:Connect(function()
-		local InfiniteJumpEnabled = true
-		game:GetService("UserInputService").JumpRequest:connect(function()
-			if InfiniteJumpEnabled then
-				game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
-			end
-		end)
-		local InfiniteJump = CreateButton("Infinite Jump: Off", StuffFrame)
-		InfiniteJump.Position = UDim2.new(0,10,0,130)
-		InfiniteJump.Size = UDim2.new(0,150,0,30)
-		InfiniteJump.MouseButton1Click:connect(function()
-			local state = InfiniteJump.Text:sub(string.len("Infinite Jump: ") + 1)
-			local new = state == "Off" and "On" or state == "On" and "Off"
-			InfiniteJumpEnabled = new == "On"
-			InfiniteJump.Text = "Infinite Jump: " .. new
-		end)
-	end)
+    Button = script.Parent
+    
+    Button.MouseButton1Click:Connect(function()
+        local InfiniteJumpEnabled = true
+        game:GetService("UserInputService").JumpRequest:connect(function()
+            if InfiniteJumpEnabled then
+                game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+            end
+        end)
+        local InfiniteJump = CreateButton("Infinite Jump: Off", StuffFrame)
+        InfiniteJump.Position = UDim2.new(0,10,0,130)
+        InfiniteJump.Size = UDim2.new(0,150,0,30)
+        InfiniteJump.MouseButton1Click:connect(function()
+            local state = InfiniteJump.Text:sub(string.len("Infinite Jump: ") + 1)
+            local new = state == "Off" and "On" or state == "On" and "Off"
+            InfiniteJumpEnabled = new == "On"
+            InfiniteJump.Text = "Infinite Jump: " .. new
+        end)
+    end)
 end
-coroutine.wrap(MTNDN_fake_script)()
-local function TRWNLR_fake_script() -- GravityButton.GravScript 
-	local script = Instance.new('LocalScript', GravityButton)
+coroutine.wrap(MZDMLA_fake_script)()
+local function HQLFZ_fake_script() -- GravityButton.GravScript 
+    local script = Instance.new('LocalScript', GravityButton)
 
-	Button = script.Parent
-	
-	Button.MouseButton1Click:Connect(function()
-		Workspace.Gravity = script.Parent.Parent.Gravity.Text
-	end)
+    Button = script.Parent
+    
+    Button.MouseButton1Click:Connect(function()
+        Workspace.Gravity = script.Parent.Parent.Gravity.Text
+    end)
 end
-coroutine.wrap(TRWNLR_fake_script)()
-local function GHYKD_fake_script() -- TpButton.TpScript 
-	local script = Instance.new('LocalScript', TpButton)
+coroutine.wrap(HQLFZ_fake_script)()
+local function WCXXNQY_fake_script() -- ResetButton.ResetScript 
+    local script = Instance.new('LocalScript', ResetButton)
 
-	Button = script.Parent
-	Name = script.Parent.Parent.Player.Text
-	
-	Button.MouseButton1Click:Connect(function()
-		game.Players.LocalPlayer.Character.Torso.CFrame = CFrame.new(game.Workspace:FindFirstChild(Name).Torso.Position)
-	end)
+    ButtonR = script.Parent
+    
+    ButtonR.MouseButton1Click:Connect(function()
+        game.Players.LocalPlayer.Character.Humanoid.Health = 0
+    end)
 end
-coroutine.wrap(GHYKD_fake_script)()
-local function KKWKMI_fake_script() -- ResetButton.ResetScript 
-	local script = Instance.new('LocalScript', ResetButton)
+coroutine.wrap(WCXXNQY_fake_script)()
+local function RZMY_fake_script() -- UnlockButton.UnlockAll 
+    local script = Instance.new('Script', UnlockButton)
 
-	ButtonR = script.Parent
-	
-	ButtonR.MouseButton1Click:Connect(function()
-		game.Players.LocalPlayer.Character.Humanoid.Health = 0
-	end)
+    function unlock(obj)
+    for i,v in pairs(obj:GetChildren()) do
+    if v:IsA("BasePart") then
+    v.Locked = false
+    end
+    unlock(v)
+    end
+    end
+    unlock(workspace)
+    
 end
-coroutine.wrap(KKWKMI_fake_script)()
-local function PAHKJD_fake_script() -- UnlockButton.UnlockAll 
-	local script = Instance.new('Script', UnlockButton)
+coroutine.wrap(RZMY_fake_script)()
+local function DJBUL_fake_script() -- CloseButton1.O/CScript1 
+    local script = Instance.new('LocalScript', CloseButton1)
 
-	function unlock(obj)
-	for i,v in pairs(obj:GetChildren()) do
-	if v:IsA("BasePart") then
-	v.Locked = false
-	end
-	unlock(v)
-	end
-	end
-	unlock(workspace)
-	
+    Button1 = script.Parent
+    Back1 = script.Parent.Parent.Back1
+    local OorC1 = 1
+    
+    Button1.MouseButton1Click:Connect(function()
+        if OorC1 == 1 then
+            Back1.Visible = false
+            OorC1 = 0
+        elseif OorC1 == 0 then
+            Back1.Visible = true
+            OorC1 = 1
+        end
+    end)
 end
-coroutine.wrap(PAHKJD_fake_script)()
-local function TIUNGO_fake_script() -- CloseButton1.O/CScript1 
-	local script = Instance.new('LocalScript', CloseButton1)
+coroutine.wrap(DJBUL_fake_script)()
+local function VIZJW_fake_script() -- Gui.HideLScript 
+    local script = Instance.new('LocalScript', Gui)
 
-	Button1 = script.Parent
-	Back1 = script.Parent.Parent.Back1
-	local OorC1 = 1
-	
-	Button1.MouseButton1Click:Connect(function()
-		if OorC1 == 1 then
-			Back1.Visible = false
-			OorC1 = 0
-		elseif OorC1 == 0 then
-			Back1.Visible = true
-			OorC1 = 1
-		end
-	end)
+    inp = game:GetService("UserInputService")
+    local wState = 1
+    
+    inp.InputBegan:Connect(function(input)
+        if input.KeyCode == Enum.KeyCode.RightShift then
+            if wState == 1 then
+                wState = 0
+                script.Parent.BlocksTop.Visible = false
+                script.Parent.MiscellaneousTop.Visible = false
+                script.Parent.MovementTop.Visible = false
+                script.Parent.VisualsTop.Visible = false
+                script.Parent.InfoText.Visible = false
+            elseif wState == 0 then
+                wState = 1
+                script.Parent.BlocksTop.Visible = true
+                script.Parent.MiscellaneousTop.Visible = true
+                script.Parent.MovementTop.Visible = true
+                script.Parent.VisualsTop.Visible = true
+                script.Parent.InfoText.Visible = true
+            end
+        end
+    end)
 end
-coroutine.wrap(TIUNGO_fake_script)()
-local function FBVHE_fake_script() -- Gui.HideLScript 
-	local script = Instance.new('LocalScript', Gui)
+coroutine.wrap(VIZJW_fake_script)()
+local function LBZWO_fake_script() -- VisualsTop.MoveScript3 
+    local script = Instance.new('LocalScript', VisualsTop)
 
-	inp = game:GetService("UserInputService")
-	local wState = 1
-	
-	inp.InputBegan:Connect(function(input)
-		if input.KeyCode == Enum.KeyCode.RightShift then
-			if wState == 1 then
-				wState = 0
-				script.Parent.BlocksTop.Visible = false
-				script.Parent.MiscellaneousTop.Visible = false
-				script.Parent.MovementTop.Visible = false
-				script.Parent.InfoText.Text = "Press RightShift to show the gui."
-			elseif wState == 0 then
-				wState = 1
-				script.Parent.BlocksTop.Visible = true
-				script.Parent.MiscellaneousTop.Visible = true
-				script.Parent.MovementTop.Visible = true
-				script.Parent.InfoText.Text = "Future Hub, made by Aquotin v1.2 Press Right Shift to hide the gui."
-			end
-		end
-	end)
+    local UserInputService = game:GetService("UserInputService")
+    
+    local gui = script.Parent
+    
+    local dragging
+    local dragInput
+    local dragStart
+    local startPos
+    
+    local function update(input)
+        local delta = input.Position - dragStart
+        gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+    end
+    
+    script.Parent.InputBegan:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+            dragging = true
+            dragStart = input.Position
+            startPos = gui.Position
+    
+            input.Changed:Connect(function()
+                if input.UserInputState == Enum.UserInputState.End then
+                    dragging = false
+                end
+            end)
+        end
+    end)
+    
+    gui.InputChanged:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+            dragInput = input
+        end
+    end)
+    
+    UserInputService.InputChanged:Connect(function(input)
+        if input == dragInput and dragging then
+            update(input)
+        end
+    end)
 end
-coroutine.wrap(FBVHE_fake_script)()
+coroutine.wrap(LBZWO_fake_script)()
+local function GQCZZSG_fake_script() -- EspButton.EspScript 
+    local script = Instance.new('LocalScript', EspButton)
+
+    button2IIII = script.Parent
+    
+    button2IIII.MouseButton1Click:Connect(function()
+        local plr2I = script.Parent.Parent.Esp.Text
+        local esp2I = Instance.new("BillboardGui", game.Workspace:FindFirstChild(plr2I).Head)
+        local eframe2I = Instance.new("Frame", esp2I)
+    
+        esp2I.Active = true
+        esp2I.AlwaysOnTop = true
+        esp2I.Size = UDim2.new(1,0, 1,0)
+        esp2I.Name = "esphead"
+        eframe2I.Size = UDim2.new(1,0, 1,0)
+        eframe2I.BorderSizePixel = 0
+        eframe2I.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+        eframe2I.Name = "espframe"
+    end)
+end
+coroutine.wrap(GQCZZSG_fake_script)()
+local function TGGZLE_fake_script() -- CloseButton3.O/CScript3 
+    local script = Instance.new('LocalScript', CloseButton3)
+
+    Button3 = script.Parent
+    Back3 = script.Parent.Parent.Back3
+    local OorC3 = 1
+    
+    Button3.MouseButton1Click:Connect(function()
+        if OorC3 == 1 then
+            Back3.Visible = false
+            OorC3 = 0
+        elseif OorC3 == 0 then
+            Back3.Visible = true
+            OorC3 = 1
+        end
+    end)
+end
+coroutine.wrap(TGGZLE_fake_script)()
