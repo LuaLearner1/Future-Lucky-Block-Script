@@ -52,31 +52,33 @@ local UnlockButton = Instance.new("TextButton")
 local Gradient_22 = Instance.new("UIGradient")
 local DexButton = Instance.new("TextButton")
 local Gradient_23 = Instance.new("UIGradient")
+local InfButton = Instance.new("TextButton")
+local Gradient_24 = Instance.new("UIGradient")
 local CloseButton1 = Instance.new("TextButton")
 local Title1 = Instance.new("TextLabel")
 local InfoText = Instance.new("TextLabel")
 local VisualsTop = Instance.new("Frame")
 local Back3 = Instance.new("Frame")
-local Gradient_24 = Instance.new("UIGradient")
-local EspButton = Instance.new("TextButton")
 local Gradient_25 = Instance.new("UIGradient")
-local Esp = Instance.new("TextBox")
+local EspButton = Instance.new("TextButton")
 local Gradient_26 = Instance.new("UIGradient")
+local Esp = Instance.new("TextBox")
+local Gradient_27 = Instance.new("UIGradient")
 local CloseButton3 = Instance.new("TextButton")
 local Title3 = Instance.new("TextLabel")
 local CustomizateTop = Instance.new("Frame")
 local Back4 = Instance.new("Frame")
-local Gradient_27 = Instance.new("UIGradient")
-local RedButton = Instance.new("TextButton")
 local Gradient_28 = Instance.new("UIGradient")
-local GreenButton = Instance.new("TextButton")
+local RedButton = Instance.new("TextButton")
 local Gradient_29 = Instance.new("UIGradient")
-local BluButton = Instance.new("TextButton")
+local GreenButton = Instance.new("TextButton")
 local Gradient_30 = Instance.new("UIGradient")
-local YellButton = Instance.new("TextButton")
+local BluButton = Instance.new("TextButton")
 local Gradient_31 = Instance.new("UIGradient")
-local RainbowButton = Instance.new("TextButton")
+local YellButton = Instance.new("TextButton")
 local Gradient_32 = Instance.new("UIGradient")
+local RainbowButton = Instance.new("TextButton")
+local Gradient_33 = Instance.new("UIGradient")
 local CloseButton4 = Instance.new("TextButton")
 local Title4 = Instance.new("TextLabel")
 
@@ -437,7 +439,7 @@ Back1.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 Back1.BackgroundTransparency = 0.500
 Back1.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Back1.Position = UDim2.new(-0.0019999186, 0, 1.00000036, 0)
-Back1.Size = UDim2.new(0, 150, 0, 203)
+Back1.Size = UDim2.new(0, 150, 0, 225)
 
 Gradient_15.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
 Gradient_15.Rotation = -90
@@ -469,7 +471,7 @@ ClearBButton.Parent = Back1
 ClearBButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 ClearBButton.BackgroundTransparency = 0.500
 ClearBButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ClearBButton.Position = UDim2.new(0.0480000004, 0, 0.125, 0)
+ClearBButton.Position = UDim2.new(0.0546666682, 0, 0.116111107, 0)
 ClearBButton.Size = UDim2.new(0, 135, 0, 18)
 ClearBButton.Font = Enum.Font.SourceSans
 ClearBButton.Text = "Clear Inventory"
@@ -489,7 +491,7 @@ InfJButton.Parent = Back1
 InfJButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 InfJButton.BackgroundTransparency = 0.500
 InfJButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-InfJButton.Position = UDim2.new(0.0483333319, 0, 0.255665034, 0)
+InfJButton.Position = UDim2.new(0.0483333319, 0, 0.228998363, 0)
 InfJButton.Size = UDim2.new(0, 135, 0, 18)
 InfJButton.Font = Enum.Font.SourceSans
 InfJButton.Text = "Infinite jump"
@@ -509,7 +511,7 @@ Gravity.Parent = Back1
 Gravity.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 Gravity.BackgroundTransparency = 0.500
 Gravity.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Gravity.Position = UDim2.new(0.0480000004, 0, 0.503913045, 0)
+Gravity.Position = UDim2.new(0.0546666682, 0, 0.450579703, 0)
 Gravity.Size = UDim2.new(0, 135, 0, 18)
 Gravity.Font = Enum.Font.SourceSans
 Gravity.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
@@ -528,7 +530,7 @@ GravityButton.Parent = Back1
 GravityButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 GravityButton.BackgroundTransparency = 0.500
 GravityButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-GravityButton.Position = UDim2.new(0.0480000004, 0, 0.366256148, 0)
+GravityButton.Position = UDim2.new(0.0546666682, 0, 0.330700576, 0)
 GravityButton.Size = UDim2.new(0, 135, 0, 18)
 GravityButton.Font = Enum.Font.SourceSans
 GravityButton.Text = "Set Gravity"
@@ -548,7 +550,7 @@ ResetButton.Parent = Back1
 ResetButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 ResetButton.BackgroundTransparency = 0.500
 ResetButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ResetButton.Position = UDim2.new(0.0480000004, 0, 0.629363954, 0)
+ResetButton.Position = UDim2.new(0.0480000004, 0, 0.562697291, 0)
 ResetButton.Size = UDim2.new(0, 135, 0, 18)
 ResetButton.Font = Enum.Font.SourceSans
 ResetButton.Text = "Reset character"
@@ -568,7 +570,7 @@ UnlockButton.Parent = Back1
 UnlockButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 UnlockButton.BackgroundTransparency = 0.500
 UnlockButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-UnlockButton.Position = UDim2.new(0.0480000004, 0, 0.775918305, 0)
+UnlockButton.Position = UDim2.new(0.0546666682, 0, 0.695918322, 0)
 UnlockButton.Size = UDim2.new(0, 135, 0, 18)
 UnlockButton.Font = Enum.Font.SourceSans
 UnlockButton.Text = "Unlock Workspace"
@@ -588,7 +590,7 @@ DexButton.Parent = Back1
 DexButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 DexButton.BackgroundTransparency = 0.500
 DexButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-DexButton.Position = UDim2.new(0.0546666682, 0, 0.908923209, 0)
+DexButton.Position = UDim2.new(0.0480000004, 0, 0.811145425, 0)
 DexButton.Size = UDim2.new(0, 135, 0, 18)
 DexButton.Font = Enum.Font.SourceSans
 DexButton.Text = "Explorer"
@@ -602,6 +604,26 @@ Gradient_23.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fro
 Gradient_23.Rotation = -90
 Gradient_23.Name = "Gradient"
 Gradient_23.Parent = DexButton
+
+InfButton.Name = "InfButton"
+InfButton.Parent = Back1
+InfButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+InfButton.BackgroundTransparency = 0.500
+InfButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InfButton.Position = UDim2.new(0.0480000004, 0, 0.917812109, 0)
+InfButton.Size = UDim2.new(0, 135, 0, 18)
+InfButton.Font = Enum.Font.SourceSans
+InfButton.Text = "Infinite Yield"
+InfButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfButton.TextSize = 15.000
+InfButton.TextWrapped = true
+InfButton.TextXAlignment = Enum.TextXAlignment.Left
+InfButton.TextYAlignment = Enum.TextYAlignment.Top
+
+Gradient_24.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+Gradient_24.Rotation = -90
+Gradient_24.Name = "Gradient"
+Gradient_24.Parent = InfButton
 
 CloseButton1.Name = "CloseButton1"
 CloseButton1.Parent = MiscellaneousTop
@@ -639,7 +661,7 @@ InfoText.BackgroundTransparency = 1.000
 InfoText.Position = UDim2.new(0.0117540527, 0, 0.910112381, 0)
 InfoText.Size = UDim2.new(0, 234, 0, 50)
 InfoText.Font = Enum.Font.SourceSans
-InfoText.Text = "Future Hub, made by Aquotin v1.6 Press Right Shift to hide the gui."
+InfoText.Text = "Future Hub, made by Aquotin v1.7 Press Right Shift to hide the gui."
 InfoText.TextColor3 = Color3.fromRGB(255, 255, 255)
 InfoText.TextScaled = true
 InfoText.TextSize = 14.000
@@ -662,10 +684,10 @@ Back3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Back3.Position = UDim2.new(-0.0019999186, 0, 1.00000036, 0)
 Back3.Size = UDim2.new(0, 150, 0, 52)
 
-Gradient_24.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-Gradient_24.Rotation = -90
-Gradient_24.Name = "Gradient"
-Gradient_24.Parent = Back3
+Gradient_25.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+Gradient_25.Rotation = -90
+Gradient_25.Name = "Gradient"
+Gradient_25.Parent = Back3
 
 EspButton.Name = "EspButton"
 EspButton.Parent = Back3
@@ -682,10 +704,10 @@ EspButton.TextWrapped = true
 EspButton.TextXAlignment = Enum.TextXAlignment.Left
 EspButton.TextYAlignment = Enum.TextYAlignment.Top
 
-Gradient_25.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-Gradient_25.Rotation = -90
-Gradient_25.Name = "Gradient"
-Gradient_25.Parent = EspButton
+Gradient_26.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+Gradient_26.Rotation = -90
+Gradient_26.Name = "Gradient"
+Gradient_26.Parent = EspButton
 
 Esp.Name = "Esp"
 Esp.Parent = Back3
@@ -702,10 +724,10 @@ Esp.TextColor3 = Color3.fromRGB(255, 255, 255)
 Esp.TextSize = 14.000
 Esp.TextWrapped = true
 
-Gradient_26.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-Gradient_26.Rotation = -90
-Gradient_26.Name = "Gradient"
-Gradient_26.Parent = Esp
+Gradient_27.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+Gradient_27.Rotation = -90
+Gradient_27.Name = "Gradient"
+Gradient_27.Parent = Esp
 
 CloseButton3.Name = "CloseButton3"
 CloseButton3.Parent = VisualsTop
@@ -752,10 +774,10 @@ Back4.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Back4.Position = UDim2.new(-0.0019999186, 0, 1.00000048, 0)
 Back4.Size = UDim2.new(0, 150, 0, 124)
 
-Gradient_27.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-Gradient_27.Rotation = -90
-Gradient_27.Name = "Gradient"
-Gradient_27.Parent = Back4
+Gradient_28.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+Gradient_28.Rotation = -90
+Gradient_28.Name = "Gradient"
+Gradient_28.Parent = Back4
 
 RedButton.Name = "RedButton"
 RedButton.Parent = Back4
@@ -772,10 +794,10 @@ RedButton.TextWrapped = true
 RedButton.TextXAlignment = Enum.TextXAlignment.Left
 RedButton.TextYAlignment = Enum.TextYAlignment.Top
 
-Gradient_28.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-Gradient_28.Rotation = -90
-Gradient_28.Name = "Gradient"
-Gradient_28.Parent = RedButton
+Gradient_29.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+Gradient_29.Rotation = -90
+Gradient_29.Name = "Gradient"
+Gradient_29.Parent = RedButton
 
 GreenButton.Name = "GreenButton"
 GreenButton.Parent = Back4
@@ -792,10 +814,10 @@ GreenButton.TextWrapped = true
 GreenButton.TextXAlignment = Enum.TextXAlignment.Left
 GreenButton.TextYAlignment = Enum.TextYAlignment.Top
 
-Gradient_29.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-Gradient_29.Rotation = -90
-Gradient_29.Name = "Gradient"
-Gradient_29.Parent = GreenButton
+Gradient_30.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+Gradient_30.Rotation = -90
+Gradient_30.Name = "Gradient"
+Gradient_30.Parent = GreenButton
 
 BluButton.Name = "BluButton"
 BluButton.Parent = Back4
@@ -812,10 +834,10 @@ BluButton.TextWrapped = true
 BluButton.TextXAlignment = Enum.TextXAlignment.Left
 BluButton.TextYAlignment = Enum.TextYAlignment.Top
 
-Gradient_30.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-Gradient_30.Rotation = -90
-Gradient_30.Name = "Gradient"
-Gradient_30.Parent = BluButton
+Gradient_31.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+Gradient_31.Rotation = -90
+Gradient_31.Name = "Gradient"
+Gradient_31.Parent = BluButton
 
 YellButton.Name = "YellButton"
 YellButton.Parent = Back4
@@ -832,10 +854,10 @@ YellButton.TextWrapped = true
 YellButton.TextXAlignment = Enum.TextXAlignment.Left
 YellButton.TextYAlignment = Enum.TextYAlignment.Top
 
-Gradient_31.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-Gradient_31.Rotation = -90
-Gradient_31.Name = "Gradient"
-Gradient_31.Parent = YellButton
+Gradient_32.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+Gradient_32.Rotation = -90
+Gradient_32.Name = "Gradient"
+Gradient_32.Parent = YellButton
 
 RainbowButton.Name = "RainbowButton"
 RainbowButton.Parent = Back4
@@ -852,10 +874,10 @@ RainbowButton.TextWrapped = true
 RainbowButton.TextXAlignment = Enum.TextXAlignment.Left
 RainbowButton.TextYAlignment = Enum.TextYAlignment.Top
 
-Gradient_32.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
-Gradient_32.Rotation = -90
-Gradient_32.Name = "Gradient"
-Gradient_32.Parent = RainbowButton
+Gradient_33.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+Gradient_33.Rotation = -90
+Gradient_33.Name = "Gradient"
+Gradient_33.Parent = RainbowButton
 
 CloseButton4.Name = "CloseButton4"
 CloseButton4.Parent = CustomizateTop
@@ -888,7 +910,7 @@ Title4.TextXAlignment = Enum.TextXAlignment.Left
 
 -- Scripts:
 
-local function FKNWD_fake_script() -- BlocksTop.MoveScript 
+local function WCPHFD_fake_script() -- BlocksTop.MoveScript 
 	local script = Instance.new('LocalScript', BlocksTop)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -931,8 +953,8 @@ local function FKNWD_fake_script() -- BlocksTop.MoveScript
 		end
 	end)
 end
-coroutine.wrap(FKNWD_fake_script)()
-local function AALMWDK_fake_script() -- SLuckyButton.LuckyScript4 
+coroutine.wrap(WCPHFD_fake_script)()
+local function YOTBD_fake_script() -- SLuckyButton.LuckyScript4 
 	local script = Instance.new('LocalScript', SLuckyButton)
 
 	Button = script.Parent
@@ -941,8 +963,8 @@ local function AALMWDK_fake_script() -- SLuckyButton.LuckyScript4
 		game.ReplicatedStorage.SpawnSuperBlock:FireServer()
 	end)
 end
-coroutine.wrap(AALMWDK_fake_script)()
-local function HFJIDI_fake_script() -- RGBButton.LuckyScript3 
+coroutine.wrap(YOTBD_fake_script)()
+local function GMLM_fake_script() -- RGBButton.LuckyScript3 
 	local script = Instance.new('LocalScript', RGBButton)
 
 	Button = script.Parent
@@ -951,8 +973,8 @@ local function HFJIDI_fake_script() -- RGBButton.LuckyScript3
 		game.ReplicatedStorage.SpawnRainbowBlock:FireServer()
 	end)
 end
-coroutine.wrap(HFJIDI_fake_script)()
-local function MUKMRIX_fake_script() -- LuckyButton.LuckyScript2 
+coroutine.wrap(GMLM_fake_script)()
+local function MSMBB_fake_script() -- LuckyButton.LuckyScript2 
 	local script = Instance.new('LocalScript', LuckyButton)
 
 	Button = script.Parent
@@ -961,8 +983,8 @@ local function MUKMRIX_fake_script() -- LuckyButton.LuckyScript2
 		game.ReplicatedStorage.SpawnLuckyBlock:FireServer()
 	end)
 end
-coroutine.wrap(MUKMRIX_fake_script)()
-local function ZPRCPAQ_fake_script() -- DiamondButton.LuckyScript 
+coroutine.wrap(MSMBB_fake_script)()
+local function EFPCCTE_fake_script() -- DiamondButton.LuckyScript 
 	local script = Instance.new('LocalScript', DiamondButton)
 
 	Button = script.Parent
@@ -971,8 +993,8 @@ local function ZPRCPAQ_fake_script() -- DiamondButton.LuckyScript
 		game.ReplicatedStorage.SpawnDiamondBlock:FireServer()
 	end)
 end
-coroutine.wrap(ZPRCPAQ_fake_script)()
-local function FNKQA_fake_script() -- GalaButton.LuckyScript1 
+coroutine.wrap(EFPCCTE_fake_script)()
+local function GUJOHU_fake_script() -- GalaButton.LuckyScript1 
 	local script = Instance.new('LocalScript', GalaButton)
 
 	Button = script.Parent
@@ -981,8 +1003,8 @@ local function FNKQA_fake_script() -- GalaButton.LuckyScript1
 		game.ReplicatedStorage.SpawnGalaxyBlock:FireServer()
 	end)
 end
-coroutine.wrap(FNKQA_fake_script)()
-local function SHTBTWE_fake_script() -- CloseButton.O/CScript 
+coroutine.wrap(GUJOHU_fake_script)()
+local function ICMZRRI_fake_script() -- CloseButton.O/CScript 
 	local script = Instance.new('LocalScript', CloseButton)
 
 	Button = script.Parent
@@ -999,8 +1021,8 @@ local function SHTBTWE_fake_script() -- CloseButton.O/CScript
 		end
 	end)
 end
-coroutine.wrap(SHTBTWE_fake_script)()
-local function FGSRN_fake_script() -- FlyText.FlyScript 
+coroutine.wrap(ICMZRRI_fake_script)()
+local function ANRROCR_fake_script() -- FlyText.FlyScript 
 	local script = Instance.new('LocalScript', FlyText)
 
 	lplayer = game:GetService("Players").LocalPlayer
@@ -1084,8 +1106,8 @@ local function FGSRN_fake_script() -- FlyText.FlyScript
 				potato = 1
 			end end end)
 end
-coroutine.wrap(FGSRN_fake_script)()
-local function FMJRZHZ_fake_script() -- SpeedButton.SpeedScript 
+coroutine.wrap(ANRROCR_fake_script)()
+local function JWHVPZ_fake_script() -- SpeedButton.SpeedScript 
 	local script = Instance.new('LocalScript', SpeedButton)
 
 	Button = script.Parent
@@ -1099,8 +1121,8 @@ local function FMJRZHZ_fake_script() -- SpeedButton.SpeedScript
 		end
 	end)
 end
-coroutine.wrap(FMJRZHZ_fake_script)()
-local function IMVKNIO_fake_script() -- JumpButton.JumpScript 
+coroutine.wrap(JWHVPZ_fake_script)()
+local function XFBKU_fake_script() -- JumpButton.JumpScript 
 	local script = Instance.new('LocalScript', JumpButton)
 
 	Button = script.Parent
@@ -1114,8 +1136,8 @@ local function IMVKNIO_fake_script() -- JumpButton.JumpScript
 		end
 	end)
 end
-coroutine.wrap(IMVKNIO_fake_script)()
-local function ZIVTU_fake_script() -- TeleportButton.TeleportScript 
+coroutine.wrap(XFBKU_fake_script)()
+local function JUZZVC_fake_script() -- TeleportButton.TeleportScript 
 	local script = Instance.new('LocalScript', TeleportButton)
 
 	local Playerqw = game.Players.LocalPlayer
@@ -1140,8 +1162,8 @@ local function ZIVTU_fake_script() -- TeleportButton.TeleportScript
 		end
 	end)
 end
-coroutine.wrap(ZIVTU_fake_script)()
-local function NHCER_fake_script() -- CloseButton2.O/CScript2 
+coroutine.wrap(JUZZVC_fake_script)()
+local function TWNDO_fake_script() -- CloseButton2.O/CScript2 
 	local script = Instance.new('LocalScript', CloseButton2)
 
 	Button2 = script.Parent
@@ -1158,8 +1180,8 @@ local function NHCER_fake_script() -- CloseButton2.O/CScript2
 		end
 	end)
 end
-coroutine.wrap(NHCER_fake_script)()
-local function XKWDAN_fake_script() -- MovementTop.MoveScript1 
+coroutine.wrap(TWNDO_fake_script)()
+local function LHOPV_fake_script() -- MovementTop.MoveScript1 
 	local script = Instance.new('LocalScript', MovementTop)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1202,8 +1224,8 @@ local function XKWDAN_fake_script() -- MovementTop.MoveScript1
 		end
 	end)
 end
-coroutine.wrap(XKWDAN_fake_script)()
-local function GWGCWJ_fake_script() -- MiscellaneousTop.MoveScript2 
+coroutine.wrap(LHOPV_fake_script)()
+local function ARVXD_fake_script() -- MiscellaneousTop.MoveScript2 
 	local script = Instance.new('LocalScript', MiscellaneousTop)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1246,8 +1268,8 @@ local function GWGCWJ_fake_script() -- MiscellaneousTop.MoveScript2
 		end
 	end)
 end
-coroutine.wrap(GWGCWJ_fake_script)()
-local function RTHDHI_fake_script() -- BtoolsButton.BtoolsScript 
+coroutine.wrap(ARVXD_fake_script)()
+local function WSHYXXG_fake_script() -- BtoolsButton.BtoolsScript 
 	local script = Instance.new('LocalScript', BtoolsButton)
 
 	Button = script.Parent
@@ -1269,8 +1291,8 @@ local function RTHDHI_fake_script() -- BtoolsButton.BtoolsScript
 		grab.Parent = game.Players.LocalPlayer.Backpack
 	end)
 end
-coroutine.wrap(RTHDHI_fake_script)()
-local function DCEND_fake_script() -- ClearBButton.ClearScript 
+coroutine.wrap(WSHYXXG_fake_script)()
+local function RMNCY_fake_script() -- ClearBButton.ClearScript 
 	local script = Instance.new('LocalScript', ClearBButton)
 
 	Button = script.Parent
@@ -1279,8 +1301,8 @@ local function DCEND_fake_script() -- ClearBButton.ClearScript
 		game.Players.LocalPlayer.Backpack:ClearAllChildren()
 	end)
 end
-coroutine.wrap(DCEND_fake_script)()
-local function ZSSXFR_fake_script() -- InfJButton.InfJScript 
+coroutine.wrap(RMNCY_fake_script)()
+local function WMLS_fake_script() -- InfJButton.InfJScript 
 	local script = Instance.new('LocalScript', InfJButton)
 
 	Button = script.Parent
@@ -1303,8 +1325,8 @@ local function ZSSXFR_fake_script() -- InfJButton.InfJScript
 		end)
 	end)
 end
-coroutine.wrap(ZSSXFR_fake_script)()
-local function TGYHB_fake_script() -- GravityButton.GravScript 
+coroutine.wrap(WMLS_fake_script)()
+local function CRIOP_fake_script() -- GravityButton.GravScript 
 	local script = Instance.new('LocalScript', GravityButton)
 
 	Button = script.Parent
@@ -1313,8 +1335,8 @@ local function TGYHB_fake_script() -- GravityButton.GravScript
 		Workspace.Gravity = script.Parent.Parent.Gravity.Text
 	end)
 end
-coroutine.wrap(TGYHB_fake_script)()
-local function PLKYDBW_fake_script() -- ResetButton.ResetScript 
+coroutine.wrap(CRIOP_fake_script)()
+local function TSFI_fake_script() -- ResetButton.ResetScript 
 	local script = Instance.new('LocalScript', ResetButton)
 
 	ButtonR = script.Parent
@@ -1323,8 +1345,8 @@ local function PLKYDBW_fake_script() -- ResetButton.ResetScript
 		game.Players.LocalPlayer.Character.Humanoid.Health = 0
 	end)
 end
-coroutine.wrap(PLKYDBW_fake_script)()
-local function IZOVK_fake_script() -- UnlockButton.UnlockAll 
+coroutine.wrap(TSFI_fake_script)()
+local function YTEFYRX_fake_script() -- UnlockButton.UnlockAll 
 	local script = Instance.new('Script', UnlockButton)
 
 	function unlock(obj)
@@ -1338,8 +1360,8 @@ local function IZOVK_fake_script() -- UnlockButton.UnlockAll
 	unlock(workspace)
 	
 end
-coroutine.wrap(IZOVK_fake_script)()
-local function QZRNMI_fake_script() -- DexButton.DexScript 
+coroutine.wrap(YTEFYRX_fake_script)()
+local function CYHA_fake_script() -- DexButton.DexScript 
 	local script = Instance.new('LocalScript', DexButton)
 
 	butttondexxxx = script.Parent
@@ -1348,8 +1370,18 @@ local function QZRNMI_fake_script() -- DexButton.DexScript
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/LuaLearner1/Dark-Dex/main/loader'), true))()
 	end)
 end
-coroutine.wrap(QZRNMI_fake_script)()
-local function QGDAEMQ_fake_script() -- CloseButton1.O/CScript1 
+coroutine.wrap(CYHA_fake_script)()
+local function CLJM_fake_script() -- InfButton.InfYieldButton 
+	local script = Instance.new('LocalScript', InfButton)
+
+	butttondexasdfasdfasdfasdfasdxxx = script.Parent
+	
+	butttondexasdfasdfasdfasdfasdxxx.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end)
+end
+coroutine.wrap(CLJM_fake_script)()
+local function FGMEIZ_fake_script() -- CloseButton1.O/CScript1 
 	local script = Instance.new('LocalScript', CloseButton1)
 
 	Button1 = script.Parent
@@ -1366,8 +1398,8 @@ local function QGDAEMQ_fake_script() -- CloseButton1.O/CScript1
 		end
 	end)
 end
-coroutine.wrap(QGDAEMQ_fake_script)()
-local function LJPWM_fake_script() -- Gui.HideLScript 
+coroutine.wrap(FGMEIZ_fake_script)()
+local function DGITMI_fake_script() -- Gui.HideLScript 
 	local script = Instance.new('LocalScript', Gui)
 
 	inp = game:GetService("UserInputService")
@@ -1395,8 +1427,8 @@ local function LJPWM_fake_script() -- Gui.HideLScript
 		end
 	end)
 end
-coroutine.wrap(LJPWM_fake_script)()
-local function UPJVHF_fake_script() -- VisualsTop.MoveScript3 
+coroutine.wrap(DGITMI_fake_script)()
+local function GYXQ_fake_script() -- VisualsTop.MoveScript3 
 	local script = Instance.new('LocalScript', VisualsTop)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1439,8 +1471,8 @@ local function UPJVHF_fake_script() -- VisualsTop.MoveScript3
 		end
 	end)
 end
-coroutine.wrap(UPJVHF_fake_script)()
-local function OISL_fake_script() -- EspButton.EspScript 
+coroutine.wrap(GYXQ_fake_script)()
+local function FNKXNZ_fake_script() -- EspButton.EspScript 
 	local script = Instance.new('LocalScript', EspButton)
 
 	button2IIII = script.Parent
@@ -1466,8 +1498,8 @@ local function OISL_fake_script() -- EspButton.EspScript
 		espframe2I.Name = "esptorsoframe"
 	end)
 end
-coroutine.wrap(OISL_fake_script)()
-local function YDAWTE_fake_script() -- CloseButton3.O/CScript3 
+coroutine.wrap(FNKXNZ_fake_script)()
+local function BBRZ_fake_script() -- CloseButton3.O/CScript3 
 	local script = Instance.new('LocalScript', CloseButton3)
 
 	Button3 = script.Parent
@@ -1484,8 +1516,8 @@ local function YDAWTE_fake_script() -- CloseButton3.O/CScript3
 		end
 	end)
 end
-coroutine.wrap(YDAWTE_fake_script)()
-local function PAIPE_fake_script() -- CustomizateTop.MoveScript4 
+coroutine.wrap(BBRZ_fake_script)()
+local function OIOQ_fake_script() -- CustomizateTop.MoveScript4 
 	local script = Instance.new('LocalScript', CustomizateTop)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -1528,8 +1560,8 @@ local function PAIPE_fake_script() -- CustomizateTop.MoveScript4
 		end
 	end)
 end
-coroutine.wrap(PAIPE_fake_script)()
-local function IQYRIUP_fake_script() -- RedButton.RedScript 
+coroutine.wrap(OIOQ_fake_script)()
+local function KARB_fake_script() -- RedButton.RedScript 
 	local script = Instance.new('LocalScript', RedButton)
 
 	button2IIIIQW = script.Parent
@@ -1560,8 +1592,8 @@ local function IQYRIUP_fake_script() -- RedButton.RedScript
 		cusclose4.BackgroundColor3 = Color3.fromRGB(255,0,0)
 	end)
 end
-coroutine.wrap(IQYRIUP_fake_script)()
-local function ZALB_fake_script() -- GreenButton.GreemScript 
+coroutine.wrap(KARB_fake_script)()
+local function DAPR_fake_script() -- GreenButton.GreemScript 
 	local script = Instance.new('LocalScript', GreenButton)
 
 	button2IIIIQWq = script.Parent
@@ -1592,8 +1624,8 @@ local function ZALB_fake_script() -- GreenButton.GreemScript
 		cusclose1.BackgroundColor3 = Color3.fromRGB(0,255,0)
 	end)
 end
-coroutine.wrap(ZALB_fake_script)()
-local function BINOAU_fake_script() -- BluButton.BluScript 
+coroutine.wrap(DAPR_fake_script)()
+local function FKKN_fake_script() -- BluButton.BluScript 
 	local script = Instance.new('LocalScript', BluButton)
 
 	button2IIIIQWq2 = script.Parent
@@ -1624,8 +1656,8 @@ local function BINOAU_fake_script() -- BluButton.BluScript
 		cusclose2.BackgroundColor3 = Color3.fromRGB(0,0,255)
 	end)
 end
-coroutine.wrap(BINOAU_fake_script)()
-local function MTOGRV_fake_script() -- YellButton.YellScript 
+coroutine.wrap(FKKN_fake_script)()
+local function ENLJIB_fake_script() -- YellButton.YellScript 
 	local script = Instance.new('LocalScript', YellButton)
 
 	button2IIIIQWq21 = script.Parent
@@ -1656,8 +1688,8 @@ local function MTOGRV_fake_script() -- YellButton.YellScript
 		cusclose3.BackgroundColor3 = Color3.fromRGB(255,255,0)
 	end)
 end
-coroutine.wrap(MTOGRV_fake_script)()
-local function WMMBU_fake_script() -- RainbowButton.RainbowScript 
+coroutine.wrap(ENLJIB_fake_script)()
+local function MIBXQQ_fake_script() -- RainbowButton.RainbowScript 
 	local script = Instance.new('LocalScript', RainbowButton)
 
 	button2IIIIQWq213 = script.Parent
@@ -1704,8 +1736,8 @@ local function WMMBU_fake_script() -- RainbowButton.RainbowScript
 	
 	counter = 0
 end
-coroutine.wrap(WMMBU_fake_script)()
-local function BODD_fake_script() -- CloseButton4.O/CScript4 
+coroutine.wrap(MIBXQQ_fake_script)()
+local function QCDPVT_fake_script() -- CloseButton4.O/CScript4 
 	local script = Instance.new('LocalScript', CloseButton4)
 
 	Button4 = script.Parent
@@ -1722,4 +1754,4 @@ local function BODD_fake_script() -- CloseButton4.O/CScript4
 		end
 	end)
 end
-coroutine.wrap(BODD_fake_script)()
+coroutine.wrap(QCDPVT_fake_script)()
