@@ -1367,7 +1367,7 @@ local function CYHA_fake_script() -- DexButton.DexScript
 	butttondexxxx = script.Parent
 	
 	butttondexxxx.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet(('https://raw.githubusercontent.com/LuaLearner1/Dark-Dex/main/loader'), true))()
+		loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
 	end)
 end
 coroutine.wrap(CYHA_fake_script)()
